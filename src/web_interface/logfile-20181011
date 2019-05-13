@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "app.py", line 11, in <module>
+    from constructiveness_predictor import ConstructivenessPredictor
+  File "../source/modeling/constructiveness_predictor.py", line 12, in <module>
+    import feature_extractor
+  File "/home/vkolhatk/dev/Constructiveness_public/source/feature_extraction/feature_extractor.py", line 8, in <module>
+    from spacy_features import CommentLevelFeatures
+  File "/home/vkolhatk/dev/Constructiveness_public/source/feature_extraction/spacy_features.py", line 1, in <module>
+    import spacy
+ModuleNotFoundError: No module named 'spacy'

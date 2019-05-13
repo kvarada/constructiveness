@@ -1,0 +1,1011 @@
+/home/vkolhatk/anaconda3/envs/py35/lib/python3.5/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+WARNING:tensorflow:From /home/vkolhatk/anaconda3/envs/py35/lib/python3.5/site-packages/tensorflow/contrib/learn/python/learn/datasets/base.py:198: retry (from tensorflow.contrib.learn.python.learn.datasets.base) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use the retry module or similar alternatives.
+WARNING:tensorflow:From /home/vkolhatk/.local/lib/python3.5/site-packages/tflearn/objectives.py:66: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2018-08-20 12:50:46.566542: I tensorflow/core/platform/cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+INFO:tensorflow:Restoring parameters from /home/vkolhatk/data/Constructiveness_public/models/NYT_picks_train_SFU_test.tflearn
+ * Running on http://localhost:9999/ (Press CTRL+C to quit)
+/home/vkolhatk/anaconda3/envs/py35/lib/python3.5/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+WARNING:tensorflow:From /home/vkolhatk/anaconda3/envs/py35/lib/python3.5/site-packages/tensorflow/contrib/learn/python/learn/datasets/base.py:198: retry (from tensorflow.contrib.learn.python.learn.datasets.base) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use the retry module or similar alternatives.
+WARNING:tensorflow:From /home/vkolhatk/.local/lib/python3.5/site-packages/tflearn/objectives.py:66: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2018-08-20 13:12:37.346042: I tensorflow/core/platform/cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+INFO:tensorflow:Restoring parameters from /home/vkolhatk/data/Constructiveness_public/models/NYT_picks_train_SFU_test.tflearn
+ * Running on http://localhost:9898/ (Press CTRL+C to quit)
+127.0.0.1 - - [20/Aug/2018 13:13:39] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [20/Aug/2018 13:13:43] "[37mGET /get_sample_comment HTTP/1.1[0m" 200 -
+127.0.0.1 - - [20/Aug/2018 13:13:45] "[37mGET /get_prediction?result=If%20it%20happens%20once%20in%20a%20while%20to%20everyone%2C%20it%27s%20a%20crime.%20If%20it%20happens%20disproportionately%20to%20a%20particular%20demographic%2C%20it%27s%20more%20than%20just%20a%20crime.%20Harper%20is%20way%20out%20to%20lunch%20on%20this%20one.%20This%20is%20not%20an%20issue%20the%20police%20can%20solve.%20It%27s%20going%20to%20take%20a%20society%2C%20a%20country%2C%20to%20do%20that%2C%20and%20that%20takes%20leadership%20and%20information.&model=svm HTTP/1.1[0m" 200 -
+127.0.0.1 - - [20/Aug/2018 13:13:53] "[37mGET /get_prediction?result=If%20it%20happens%20once%20in%20a%20while%20to%20everyone%2C%20it%27s%20a%20crime.%20If%20it%20happens%20disproportionately%20to%20a%20particular%20demographic%2C%20it%27s%20more%20than%20just%20a%20crime.%20Harper%20is%20way%20out%20to%20lunch%20on%20this%20one.%20This%20is%20not%20an%20issue%20the%20police%20can%20solve.%20It%27s%20going%20to%20take%20a%20society%2C%20a%20country%2C%20to%20do%20that%2C%20and%20that%20takes%20leadership%20and%20information.&model=lstm HTTP/1.1[0m" 200 -
+127.0.0.1 - - [20/Aug/2018 13:13:53] "[37mGET /get_prediction?result=If%20it%20happens%20once%20in%20a%20while%20to%20everyone%2C%20it%27s%20a%20crime.%20If%20it%20happens%20disproportionately%20to%20a%20particular%20demographic%2C%20it%27s%20more%20than%20just%20a%20crime.%20Harper%20is%20way%20out%20to%20lunch%20on%20this%20one.%20This%20is%20not%20an%20issue%20the%20police%20can%20solve.%20It%27s%20going%20to%20take%20a%20society%2C%20a%20country%2C%20to%20do%20that%2C%20and%20that%20takes%20leadership%20and%20information.&model=lstm HTTP/1.1[0m" 200 -
+/home/vkolhatk/anaconda3/envs/py35/lib/python3.5/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+WARNING:tensorflow:From /home/vkolhatk/anaconda3/envs/py35/lib/python3.5/site-packages/tensorflow/contrib/learn/python/learn/datasets/base.py:198: retry (from tensorflow.contrib.learn.python.learn.datasets.base) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use the retry module or similar alternatives.
+WARNING:tensorflow:From /home/vkolhatk/.local/lib/python3.5/site-packages/tflearn/objectives.py:66: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2018-08-20 14:09:50.489626: I tensorflow/core/platform/cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+INFO:tensorflow:Restoring parameters from /home/vkolhatk/data/Constructiveness_public/models/NYT_picks_train_SFU_test.tflearn
+Traceback (most recent call last):
+  File "app.py", line 91, in <module>
+    app.run(host=Config.HOST, port=Config.PORT)
+  File "/home/vkolhatk/anaconda3/envs/py35/lib/python3.5/site-packages/flask/app.py", line 841, in run
+    run_simple(host, port, self, **options)
+  File "/home/vkolhatk/anaconda3/envs/py35/lib/python3.5/site-packages/werkzeug/serving.py", line 814, in run_simple
+    inner()
+  File "/home/vkolhatk/anaconda3/envs/py35/lib/python3.5/site-packages/werkzeug/serving.py", line 774, in inner
+    fd=fd)
+  File "/home/vkolhatk/anaconda3/envs/py35/lib/python3.5/site-packages/werkzeug/serving.py", line 666, in make_server
+    passthrough_errors, ssl_context, fd=fd)
+  File "/home/vkolhatk/anaconda3/envs/py35/lib/python3.5/site-packages/werkzeug/serving.py", line 577, in __init__
+    self.address_family), handler)
+  File "/home/vkolhatk/anaconda3/envs/py35/lib/python3.5/socketserver.py", line 440, in __init__
+    self.server_bind()
+  File "/home/vkolhatk/anaconda3/envs/py35/lib/python3.5/http/server.py", line 138, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/home/vkolhatk/anaconda3/envs/py35/lib/python3.5/socketserver.py", line 454, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+127.0.0.1 - - [20/Aug/2018 14:10:34] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [20/Aug/2018 14:10:34] "[37mGET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [20/Aug/2018 14:10:34] "[37mGET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [20/Aug/2018 14:10:34] "[37mGET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [20/Aug/2018 14:10:34] "[37mGET /static/css/freelancer.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [20/Aug/2018 14:10:34] "[37mGET /static/img/SFU_logo_both.png HTTP/1.1[0m" 200 -
+127.0.0.1 - - [20/Aug/2018 14:10:35] "[37mGET /static/vendor/jquery/jquery.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [20/Aug/2018 14:10:35] "[37mGET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [20/Aug/2018 14:10:35] "[37mGET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [20/Aug/2018 14:10:35] "[37mGET /static/vendor/magnific-popup/jquery.magnific-popup.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [20/Aug/2018 14:10:36] "[37mGET /static/js/jqBootstrapValidation.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [20/Aug/2018 14:10:36] "[37mGET /static/js/contact_me.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [20/Aug/2018 14:10:36] "[37mGET /static/js/freelancer.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [20/Aug/2018 14:10:36] "[37mGET /static/js/hiding_articles.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [20/Aug/2018 14:10:36] "[37mGET /static/js/hiding_feedback.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [20/Aug/2018 14:10:36] "[37mGET /static/js/showing_feedback_button.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [20/Aug/2018 14:10:38] "[37mGET /static/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Aug/2018 01:29:16] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Aug/2018 01:29:16] "[37mGET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Aug/2018 01:29:16] "[37mGET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/Aug/2018 01:29:16] "[37mGET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1[0m" 200 -
+2018-08-25 13:06:38.799370: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2018-08-25 13:06:38.799427: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-08-25 13:06:38.799433: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2018-08-25 13:06:38.799437: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-08-25 13:06:38.799441: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+2018-08-25 13:06:38.921621: I tensorflow/core/common_runtime/gpu/gpu_device.cc:955] Found device 0 with properties: 
+name: TITAN Xp
+major: 6 minor: 1 memoryClockRate (GHz) 1.582
+pciBusID 0000:02:00.0
+Total memory: 11.90GiB
+Free memory: 11.69GiB
+2018-08-25 13:06:38.921650: I tensorflow/core/common_runtime/gpu/gpu_device.cc:976] DMA: 0 
+2018-08-25 13:06:38.921655: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 0:   Y 
+2018-08-25 13:06:38.921662: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: TITAN Xp, pci bus id: 0000:02:00.0)
+2018-08-25 13:06:46.476414: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: TITAN Xp, pci bus id: 0000:02:00.0)
+2018-08-25 13:06:46.524328: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: TITAN Xp, pci bus id: 0000:02:00.0)
+/home/vkolhatk/anaconda3/envs/py35/lib/python3.5/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+INFO:tensorflow:Restoring parameters from /home/vkolhatk/data/Constructiveness_public/models/SOCC_bilstm.tflearn
+2018-08-25 13:06:47.649985: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: TITAN Xp, pci bus id: 0000:02:00.0)
+ * Running on http://localhost:9898/ (Press CTRL+C to quit)
+127.0.0.1 - - [25/Aug/2018 13:07:43] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2018 13:07:55] "[37mGET /get_sample_comment HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2018 13:07:57] "[37mGET /get_prediction?result=If%20it%20happens%20once%20in%20a%20while%20to%20everyone%2C%20it%27s%20a%20crime.%20If%20it%20happens%20disproportionately%20to%20a%20particular%20demographic%2C%20it%27s%20more%20than%20just%20a%20crime.%20Harper%20is%20way%20out%20to%20lunch%20on%20this%20one.%20This%20is%20not%20an%20issue%20the%20police%20can%20solve.%20It%27s%20going%20to%20take%20a%20society%2C%20a%20country%2C%20to%20do%20that%2C%20and%20that%20takes%20leadership%20and%20information.&model=svm HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2018 13:08:08] "[37mGET /get_prediction?result=If%20it%20happens%20once%20in%20a%20while%20to%20everyone%2C%20it%27s%20a%20crime.%20If%20it%20happens%20disproportionately%20to%20a%20particular%20demographic%2C%20it%27s%20more%20than%20just%20a%20crime.%20Harper%20is%20way%20out%20to%20lunch%20on%20this%20one.%20This%20is%20not%20an%20issue%20the%20police%20can%20solve.%20It%27s%20going%20to%20take%20a%20society%2C%20a%20country%2C%20to%20do%20that%2C%20and%20that%20takes%20leadership%20and%20information.&model=lstm HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2018 13:09:04] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2018 13:10:45] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2018 13:10:51] "[37mGET /get_sample_comment HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2018 13:10:53] "[37mGET /get_prediction?result=Simpson%20is%20right%3A%20it%27s%20a%20political%20winner%20and%20a%20policy%20dud%20-%20just%20political%20smoke%20and%20mirrors.%20Mulcair%20is%20power-hungry.%20He%20wants%20Canada%20to%20adopt%20a%20national%20childcare%20model%20so%20he%20can%20hang%20on%20to%20seats%20in%20Quebec%2C%20that%27s%20all.%20Years%20ago%20I%20worked%20with%20a%20political%20strategist%20working%20to%20get%20a%20Liberal%20candidate%20elected%20in%20Conservative%20Calgary.%20He%20actually%20told%20his%20client%20to%20talk%20about%20national%20daycare%20-%20this%20was%20in%20the%20early%2090%27s.%20The%20Liberal%20candidate%20said%2C%20%60Canada%20can%27t%20afford%20that!%27%20to%20which%20the%20strategist%20responded%20%60Just%20say%20the%20words%2C%20you%20don%27t%20have%20to%20actually%20do%20it.%20It%27ll%20be%20good%20for%20votes.%27%20I%20could%20barely%20believe%20the%20cynicism%2C%20but%20over%20the%20years%20I%27ve%20come%20to%20realize%20that%27s%20what%20it%20is%3A%20vote%20getting%20and%20power%20politics.%20Same%20thing%20here.&model=svm HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2018 13:12:10] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2018 14:20:14] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2018 14:20:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [25/Aug/2018 14:25:00] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+127.0.0.1 - - [25/Aug/2018 14:25:00] "[37mGET /static/js/showing_feedback_button.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2018 14:25:01] "[37mGET /static/css/freelancer.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2018 14:25:01] "[37mGET /static/js/freelancer.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2018 14:25:02] "[37mGET /static/js/hiding_articles.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2018 14:25:02] "[37mGET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2018 14:25:03] "[37mGET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2018 14:25:03] "[37mGET /static/vendor/magnific-popup/jquery.magnific-popup.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2018 14:25:04] "[37mGET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2018 14:25:04] "[37mGET /static/js/jqBootstrapValidation.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2018 14:25:05] "[37mGET /static/js/freelancer.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2018 14:25:06] "[37mGET /static/css/freelancer.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2018 14:25:06] "[37mGET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2018 14:25:06] "[37mGET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2018 14:25:07] "[37mGET /static/js/jqBootstrapValidation.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2018 14:25:07] "[37mGET /static/js/contact_me.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2018 14:25:08] "[37mGET /static/js/showing_feedback_button.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2018 14:25:08] "[37mGET /static/js/hiding_articles.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2018 14:25:09] "[37mGET /static/js/hiding_feedback.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2018 14:25:09] "[37mGET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2018 14:25:10] "[37mGET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2018 14:25:11] "[37mGET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2018 14:25:11] "[37mGET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2018 14:25:12] "[37mGET /static/js/contact_me.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2018 14:25:12] "[37mGET /static/vendor/magnific-popup/jquery.magnific-popup.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2018 14:25:13] "[37mGET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2018 14:25:13] "[37mGET /static/js/hiding_feedback.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2018 14:25:14] "[37mGET /static/vendor/jquery/jquery.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2018 14:25:14] "[37mGET /static/vendor/jquery/jquery.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [25/Aug/2018 14:25:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [26/Aug/2018 17:36:53] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [26/Aug/2018 17:36:53] "[37mGET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [26/Aug/2018 17:36:53] "[37mGET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [26/Aug/2018 17:36:53] "[37mGET /static/img/SFU_logo_both.png HTTP/1.1[0m" 200 -
+127.0.0.1 - - [26/Aug/2018 17:36:53] "[37mGET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [26/Aug/2018 17:36:54] "[37mGET /static/css/freelancer.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [26/Aug/2018 17:36:54] "[37mGET /static/vendor/jquery/jquery.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [26/Aug/2018 17:36:55] "[37mGET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [26/Aug/2018 17:36:55] "[37mGET /static/vendor/magnific-popup/jquery.magnific-popup.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [26/Aug/2018 17:36:55] "[37mGET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [26/Aug/2018 17:36:55] "[37mGET /static/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [26/Aug/2018 17:36:55] "[37mGET /static/js/jqBootstrapValidation.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [26/Aug/2018 17:36:55] "[37mGET /static/js/contact_me.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [26/Aug/2018 17:36:55] "[37mGET /static/js/freelancer.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [26/Aug/2018 17:36:56] "[37mGET /static/js/hiding_feedback.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [26/Aug/2018 17:36:56] "[37mGET /static/js/hiding_articles.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [26/Aug/2018 17:36:56] "[37mGET /static/js/showing_feedback_button.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [26/Aug/2018 17:36:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [26/Aug/2018 19:45:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [27/Aug/2018 04:31:43] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+127.0.0.1 - - [27/Aug/2018 04:31:44] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [27/Aug/2018 07:43:23] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [27/Aug/2018 07:43:23] "[37mGET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [27/Aug/2018 07:43:23] "[37mGET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [27/Aug/2018 07:43:23] "[37mGET /static/css/freelancer.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [27/Aug/2018 07:43:23] "[37mGET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [27/Aug/2018 07:43:23] "[37mGET /static/vendor/jquery/jquery.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [27/Aug/2018 07:43:24] "[37mGET /static/img/SFU_logo_both.png HTTP/1.1[0m" 200 -
+127.0.0.1 - - [27/Aug/2018 07:43:24] "[37mGET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [27/Aug/2018 07:43:24] "[37mGET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [27/Aug/2018 07:43:24] "[37mGET /static/js/jqBootstrapValidation.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [27/Aug/2018 07:43:24] "[37mGET /static/vendor/magnific-popup/jquery.magnific-popup.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [27/Aug/2018 07:43:24] "[37mGET /static/js/contact_me.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [27/Aug/2018 07:43:24] "[37mGET /static/js/freelancer.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [27/Aug/2018 07:43:24] "[37mGET /static/js/hiding_articles.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [27/Aug/2018 07:43:25] "[37mGET /static/js/hiding_feedback.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [27/Aug/2018 07:43:25] "[37mGET /static/js/showing_feedback_button.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [27/Aug/2018 07:43:25] "[37mGET /static/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [27/Aug/2018 07:43:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [28/Aug/2018 17:13:01] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Aug/2018 17:13:02] "[37mGET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Aug/2018 17:13:02] "[37mGET /static/css/freelancer.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Aug/2018 17:13:02] "[37mGET /static/vendor/jquery/jquery.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Aug/2018 17:13:02] "[37mGET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Aug/2018 17:13:02] "[37mGET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Aug/2018 17:13:02] "[37mGET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Aug/2018 17:13:02] "[37mGET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Aug/2018 17:13:02] "[37mGET /static/vendor/magnific-popup/jquery.magnific-popup.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Aug/2018 17:13:02] "[37mGET /static/js/jqBootstrapValidation.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Aug/2018 17:13:02] "[37mGET /static/js/contact_me.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Aug/2018 17:13:02] "[37mGET /static/js/freelancer.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Aug/2018 17:13:02] "[37mGET /static/js/hiding_articles.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Aug/2018 17:13:02] "[37mGET /static/js/hiding_feedback.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Aug/2018 17:13:03] "[37mGET /static/js/showing_feedback_button.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Aug/2018 17:13:03] "[37mGET /static/img/SFU_logo_both.png HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Aug/2018 17:13:03] "[37mGET /static/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Aug/2018 17:13:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [28/Aug/2018 17:13:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [29/Aug/2018 04:14:40] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+127.0.0.1 - - [29/Aug/2018 04:14:41] "[37mGET /static/js/contact_me.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [29/Aug/2018 04:14:41] "[37mGET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [29/Aug/2018 04:14:43] "[37mGET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [29/Aug/2018 04:14:43] "[37mGET /static/js/showing_feedback_button.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [29/Aug/2018 18:11:00] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+127.0.0.1 - - [29/Aug/2018 18:11:00] "[37mGET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [29/Aug/2018 18:11:04] "[37mGET /static/js/jqBootstrapValidation.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [29/Aug/2018 18:11:07] "[37mGET /static/js/hiding_articles.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [29/Aug/2018 18:11:11] "[37mGET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [29/Aug/2018 18:11:13] "[37mGET /static/js/showing_feedback_button.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [29/Aug/2018 18:11:15] "[37mGET /static/js/freelancer.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [29/Aug/2018 18:11:16] "[37mGET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [29/Aug/2018 18:11:17] "[37mGET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [29/Aug/2018 18:11:18] "[37mGET /static/js/freelancer.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [29/Aug/2018 18:11:19] "[37mGET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [29/Aug/2018 18:11:20] "[37mGET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [29/Aug/2018 18:11:21] "[37mGET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [29/Aug/2018 18:11:21] "[37mGET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [29/Aug/2018 18:11:22] "[37mGET /static/js/contact_me.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [29/Aug/2018 18:11:23] "[37mGET /static/js/showing_feedback_button.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [29/Aug/2018 18:11:24] "[37mGET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [29/Aug/2018 18:11:25] "[37mGET /static/vendor/magnific-popup/jquery.magnific-popup.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [29/Aug/2018 18:11:26] "[37mGET /static/vendor/jquery/jquery.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [29/Aug/2018 18:11:28] "[37mGET /static/css/freelancer.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [29/Aug/2018 18:11:29] "[37mGET /static/js/jqBootstrapValidation.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [29/Aug/2018 18:11:30] "[37mGET /static/js/contact_me.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [29/Aug/2018 18:11:31] "[37mGET /static/vendor/jquery/jquery.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [29/Aug/2018 18:11:32] "[37mGET /static/js/hiding_feedback.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [29/Aug/2018 18:11:33] "[37mGET /static/js/hiding_feedback.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [29/Aug/2018 18:11:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [29/Aug/2018 18:12:21] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [29/Aug/2018 18:12:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [30/Aug/2018 15:14:57] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+127.0.0.1 - - [30/Aug/2018 15:14:57] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [30/Aug/2018 15:15:00] "[37mGET /static/js/contact_me.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [30/Aug/2018 15:15:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [31/Aug/2018 09:45:31] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+127.0.0.1 - - [31/Aug/2018 09:45:31] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [31/Aug/2018 09:45:49] "[37mGET /static/js/showing_feedback_button.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [31/Aug/2018 09:45:49] "[37mGET /static/vendor/magnific-popup/jquery.magnific-popup.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [31/Aug/2018 09:45:50] "[37mGET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [31/Aug/2018 09:45:50] "[37mGET /static/js/jqBootstrapValidation.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [31/Aug/2018 09:45:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [31/Aug/2018 10:25:42] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [31/Aug/2018 10:25:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [31/Aug/2018 10:30:31] "[37mGET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [31/Aug/2018 10:30:31] "[37mGET /static/js/freelancer.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [31/Aug/2018 10:30:33] "[37mGET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [31/Aug/2018 10:30:34] "[37mGET /static/css/freelancer.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [31/Aug/2018 10:30:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [31/Aug/2018 10:30:36] "[37mGET /static/js/hiding_articles.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [01/Sep/2018 05:25:51] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+127.0.0.1 - - [01/Sep/2018 05:25:51] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [01/Sep/2018 05:25:54] "[37mGET /static/js/hiding_feedback.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [01/Sep/2018 16:23:56] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [01/Sep/2018 16:23:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [03/Sep/2018 12:45:09] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+127.0.0.1 - - [03/Sep/2018 12:45:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [03/Sep/2018 17:06:05] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [03/Sep/2018 17:06:05] "[37mGET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [03/Sep/2018 17:06:05] "[37mGET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [03/Sep/2018 17:06:05] "[37mGET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [03/Sep/2018 17:06:05] "[37mGET /static/vendor/jquery/jquery.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [03/Sep/2018 17:06:05] "[37mGET /static/css/freelancer.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [03/Sep/2018 17:06:05] "[37mGET /static/img/SFU_logo_both.png HTTP/1.1[0m" 200 -
+127.0.0.1 - - [03/Sep/2018 17:06:06] "[37mGET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [03/Sep/2018 17:06:06] "[37mGET /static/vendor/magnific-popup/jquery.magnific-popup.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [03/Sep/2018 17:06:06] "[37mGET /static/js/contact_me.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [03/Sep/2018 17:06:06] "[37mGET /static/js/jqBootstrapValidation.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [03/Sep/2018 17:06:06] "[37mGET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [03/Sep/2018 17:06:06] "[37mGET /static/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [03/Sep/2018 17:06:06] "[37mGET /static/js/freelancer.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [03/Sep/2018 17:06:06] "[37mGET /static/js/hiding_articles.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [03/Sep/2018 17:06:06] "[37mGET /static/js/showing_feedback_button.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [03/Sep/2018 17:06:06] "[37mGET /static/js/hiding_feedback.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [03/Sep/2018 17:06:06] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [03/Sep/2018 20:15:45] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [03/Sep/2018 20:15:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [03/Sep/2018 20:20:30] "[37mGET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [03/Sep/2018 20:20:31] "[37mGET /static/js/hiding_articles.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [03/Sep/2018 20:20:32] "[37mGET /static/css/freelancer.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [03/Sep/2018 20:20:32] "[37mGET /static/js/hiding_feedback.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [03/Sep/2018 20:20:33] "[37mGET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [03/Sep/2018 20:20:34] "[37mGET /static/css/freelancer.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [03/Sep/2018 20:20:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [03/Sep/2018 20:20:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [03/Sep/2018 23:14:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [05/Sep/2018 06:05:25] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+127.0.0.1 - - [05/Sep/2018 06:05:25] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [05/Sep/2018 06:05:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [05/Sep/2018 07:14:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [05/Sep/2018 08:38:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [05/Sep/2018 08:38:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [05/Sep/2018 08:52:01] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [05/Sep/2018 08:52:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [05/Sep/2018 15:23:58] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [05/Sep/2018 15:23:58] "[37mGET /static/img/SFU_logo_both.png HTTP/1.1[0m" 200 -
+127.0.0.1 - - [05/Sep/2018 15:23:58] "[37mGET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [05/Sep/2018 15:23:58] "[37mGET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [05/Sep/2018 15:23:58] "[37mGET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [05/Sep/2018 15:23:58] "[37mGET /static/css/freelancer.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [05/Sep/2018 15:23:58] "[37mGET /static/vendor/jquery/jquery.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [05/Sep/2018 15:23:59] "[37mGET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [05/Sep/2018 15:23:59] "[37mGET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [05/Sep/2018 15:23:59] "[37mGET /static/js/jqBootstrapValidation.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [05/Sep/2018 15:23:59] "[37mGET /static/js/contact_me.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [05/Sep/2018 15:23:59] "[37mGET /static/vendor/magnific-popup/jquery.magnific-popup.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [05/Sep/2018 15:23:59] "[37mGET /static/js/freelancer.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [05/Sep/2018 15:23:59] "[37mGET /static/js/hiding_articles.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [05/Sep/2018 15:23:59] "[37mGET /static/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [05/Sep/2018 15:23:59] "[37mGET /static/js/hiding_feedback.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [05/Sep/2018 15:23:59] "[37mGET /static/js/showing_feedback_button.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [05/Sep/2018 15:24:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [05/Sep/2018 15:24:13] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Sep/2018 03:10:43] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+127.0.0.1 - - [06/Sep/2018 03:10:43] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Sep/2018 03:10:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [06/Sep/2018 17:44:31] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+127.0.0.1 - - [06/Sep/2018 17:44:34] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Sep/2018 23:56:51] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+127.0.0.1 - - [06/Sep/2018 23:56:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [07/Sep/2018 07:36:00] "[37mGET /static/js/hiding_feedback.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [07/Sep/2018 07:36:03] "[37mGET /static/css/freelancer.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [07/Sep/2018 07:36:05] "[37mGET /static/js/freelancer.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [07/Sep/2018 07:36:07] "[37mGET /static/js/showing_feedback_button.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [07/Sep/2018 07:36:08] "[37mGET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [07/Sep/2018 07:36:09] "[37mGET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [07/Sep/2018 07:36:11] "[37mGET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [07/Sep/2018 07:36:12] "[37mGET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [07/Sep/2018 07:36:13] "[37mGET /static/css/freelancer.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [07/Sep/2018 07:36:14] "[37mGET /static/js/hiding_articles.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [07/Sep/2018 07:36:14] "[37mGET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [07/Sep/2018 07:36:15] "[37mGET /static/js/contact_me.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [07/Sep/2018 07:36:15] "[37mGET /static/vendor/jquery/jquery.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [07/Sep/2018 07:36:16] "[37mGET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [07/Sep/2018 07:36:17] "[37mGET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [07/Sep/2018 07:36:18] "[37mGET /static/vendor/magnific-popup/jquery.magnific-popup.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [07/Sep/2018 07:36:19] "[37mGET /static/js/hiding_feedback.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [07/Sep/2018 07:36:20] "[37mGET /static/js/jqBootstrapValidation.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [07/Sep/2018 07:36:21] "[37mGET /static/vendor/magnific-popup/jquery.magnific-popup.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [07/Sep/2018 07:36:22] "[37mGET /static/js/jqBootstrapValidation.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [07/Sep/2018 07:36:23] "[37mGET /static/js/freelancer.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [07/Sep/2018 07:36:24] "[37mGET /static/js/hiding_articles.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [07/Sep/2018 07:36:25] "[37mGET /static/js/contact_me.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [07/Sep/2018 07:36:26] "[37mGET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [07/Sep/2018 07:36:27] "[37mGET /static/js/showing_feedback_button.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [07/Sep/2018 07:36:28] "[37mGET /static/vendor/jquery/jquery.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [07/Sep/2018 07:36:28] "[37mGET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [07/Sep/2018 07:36:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [07/Sep/2018 07:36:30] "[37mGET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [07/Sep/2018 09:14:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [07/Sep/2018 22:54:05] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [07/Sep/2018 22:54:06] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [09/Sep/2018 23:50:36] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [09/Sep/2018 23:50:37] "[37mGET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [09/Sep/2018 23:50:37] "[37mGET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [09/Sep/2018 23:50:37] "[37mGET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [09/Sep/2018 23:50:37] "[37mGET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [09/Sep/2018 23:50:37] "[37mGET /static/css/freelancer.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [09/Sep/2018 23:50:37] "[37mGET /static/vendor/jquery/jquery.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [09/Sep/2018 23:50:37] "[37mGET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [09/Sep/2018 23:50:37] "[37mGET /static/vendor/magnific-popup/jquery.magnific-popup.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [09/Sep/2018 23:50:37] "[37mGET /static/js/jqBootstrapValidation.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [09/Sep/2018 23:50:37] "[37mGET /static/js/contact_me.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [09/Sep/2018 23:50:37] "[37mGET /static/js/freelancer.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [09/Sep/2018 23:50:38] "[37mGET /static/js/hiding_articles.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [09/Sep/2018 23:50:38] "[37mGET /static/js/showing_feedback_button.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [09/Sep/2018 23:50:38] "[37mGET /static/js/hiding_feedback.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [09/Sep/2018 23:50:38] "[37mGET /static/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [09/Sep/2018 23:50:38] "[37mGET /static/img/SFU_logo_both.png HTTP/1.1[0m" 200 -
+127.0.0.1 - - [09/Sep/2018 23:50:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [09/Sep/2018 23:50:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [10/Sep/2018 08:43:40] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [10/Sep/2018 08:43:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [11/Sep/2018 08:13:33] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+127.0.0.1 - - [11/Sep/2018 08:13:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [11/Sep/2018 08:13:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [11/Sep/2018 10:04:22] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Sep/2018 11:23:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [11/Sep/2018 13:01:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [11/Sep/2018 15:18:37] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Sep/2018 15:18:37] "[37mGET /static/img/SFU_logo_both.png HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Sep/2018 15:18:37] "[37mGET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Sep/2018 15:18:37] "[37mGET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Sep/2018 15:18:37] "[37mGET /static/vendor/jquery/jquery.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Sep/2018 15:18:37] "[37mGET /static/css/freelancer.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Sep/2018 15:18:38] "[37mGET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Sep/2018 15:18:38] "[37mGET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Sep/2018 15:18:38] "[37mGET /static/vendor/magnific-popup/jquery.magnific-popup.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Sep/2018 15:18:38] "[37mGET /static/js/contact_me.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Sep/2018 15:18:38] "[37mGET /static/js/freelancer.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Sep/2018 15:18:38] "[37mGET /static/js/hiding_feedback.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Sep/2018 15:18:38] "[37mGET /static/js/hiding_articles.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Sep/2018 15:18:38] "[37mGET /static/js/showing_feedback_button.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Sep/2018 15:18:40] "[37mGET /static/js/jqBootstrapValidation.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Sep/2018 15:18:41] "[37mGET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Sep/2018 15:18:42] "[37mGET /static/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Sep/2018 16:22:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2018 07:06:39] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2018 07:06:39] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [12/Sep/2018 07:10:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [12/Sep/2018 08:37:57] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [12/Sep/2018 10:37:15] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [12/Sep/2018 10:37:16] "[37mGET /static/img/SFU_logo_both.png HTTP/1.1[0m" 200 -
+127.0.0.1 - - [12/Sep/2018 10:37:16] "[37mGET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [12/Sep/2018 10:37:16] "[37mGET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [12/Sep/2018 10:37:16] "[37mGET /static/css/freelancer.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [12/Sep/2018 10:37:16] "[37mGET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [12/Sep/2018 10:37:16] "[37mGET /static/vendor/jquery/jquery.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [12/Sep/2018 10:37:16] "[37mGET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [12/Sep/2018 10:37:17] "[37mGET /static/js/freelancer.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [12/Sep/2018 10:37:17] "[37mGET /static/js/jqBootstrapValidation.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [12/Sep/2018 10:37:17] "[37mGET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [12/Sep/2018 10:37:17] "[37mGET /static/vendor/magnific-popup/jquery.magnific-popup.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [12/Sep/2018 10:37:17] "[37mGET /static/js/contact_me.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [12/Sep/2018 10:37:17] "[37mGET /static/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [12/Sep/2018 10:37:17] "[37mGET /static/js/hiding_feedback.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [12/Sep/2018 10:37:17] "[37mGET /static/js/showing_feedback_button.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [12/Sep/2018 10:37:21] "[37mGET /static/js/hiding_articles.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [12/Sep/2018 10:37:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [13/Sep/2018 10:12:27] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [13/Sep/2018 10:12:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [14/Sep/2018 09:59:30] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+127.0.0.1 - - [14/Sep/2018 09:59:31] "[37mGET /static/js/hiding_feedback.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [14/Sep/2018 09:59:32] "[37mGET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [14/Sep/2018 09:59:32] "[37mGET /static/css/freelancer.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [14/Sep/2018 09:59:32] "[37mGET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [14/Sep/2018 09:59:33] "[37mGET /static/js/freelancer.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [14/Sep/2018 09:59:33] "[37mGET /static/js/hiding_articles.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [14/Sep/2018 09:59:34] "[37mGET /static/vendor/jquery/jquery.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [14/Sep/2018 09:59:34] "[37mGET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [14/Sep/2018 09:59:35] "[37mGET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [14/Sep/2018 09:59:35] "[37mGET /static/vendor/magnific-popup/jquery.magnific-popup.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [14/Sep/2018 09:59:36] "[37mGET /static/js/contact_me.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [14/Sep/2018 09:59:36] "[37mGET /static/js/showing_feedback_button.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [14/Sep/2018 09:59:37] "[37mGET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [14/Sep/2018 09:59:37] "[37mGET /static/js/jqBootstrapValidation.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [14/Sep/2018 11:01:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2018-11-21 16:04:53.959456: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2018-11-21 16:04:53.989096: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-11-21 16:04:53.989116: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2018-11-21 16:04:53.989124: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-11-21 16:04:53.989131: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+2018-11-21 16:04:54.105163: I tensorflow/core/common_runtime/gpu/gpu_device.cc:955] Found device 0 with properties: 
+name: TITAN Xp
+major: 6 minor: 1 memoryClockRate (GHz) 1.582
+pciBusID 0000:02:00.0
+Total memory: 11.90GiB
+Free memory: 102.62MiB
+2018-11-21 16:04:54.105194: I tensorflow/core/common_runtime/gpu/gpu_device.cc:976] DMA: 0 
+2018-11-21 16:04:54.105199: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 0:   Y 
+2018-11-21 16:04:54.105206: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: TITAN Xp, pci bus id: 0000:02:00.0)
+2018-11-21 16:04:54.106686: E tensorflow/stream_executor/cuda/cuda_driver.cc:924] failed to allocate 102.62M (107610112 bytes) from device: CUDA_ERROR_OUT_OF_MEMORY
+2018-11-21 16:05:01.171609: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: TITAN Xp, pci bus id: 0000:02:00.0)
+2018-11-21 16:05:01.217179: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: TITAN Xp, pci bus id: 0000:02:00.0)
+/home/vkolhatk/anaconda3/envs/py35/lib/python3.5/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+INFO:tensorflow:Restoring parameters from /home/vkolhatk/data/Constructiveness_public/models/SOCC_bilstm.tflearn
+2018-11-21 16:05:02.290997: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: TITAN Xp, pci bus id: 0000:02:00.0)
+Could not convert the string:  b'\xc3\n'
+Could not convert the string:  b'\xe2\x98\n'
+Could not convert the string:  b'\xe2\x80\n'
+Could not convert the string:  b'\xe2\x96\n'
+Could not convert the string:  b'\xe2\x8b\n'
+Could not convert the string:  b'\xc3\n'
+Traceback (most recent call last):
+  File "app.py", line 84, in <module>
+    app.run(host=Config.HOST, port=Config.PORT)
+  File "/home/vkolhatk/anaconda3/envs/py35/lib/python3.5/site-packages/flask/app.py", line 841, in run
+    run_simple(host, port, self, **options)
+  File "/home/vkolhatk/.local/lib/python3.5/site-packages/werkzeug/serving.py", line 814, in run_simple
+    inner()
+  File "/home/vkolhatk/.local/lib/python3.5/site-packages/werkzeug/serving.py", line 774, in inner
+    fd=fd)
+  File "/home/vkolhatk/.local/lib/python3.5/site-packages/werkzeug/serving.py", line 666, in make_server
+    passthrough_errors, ssl_context, fd=fd)
+  File "/home/vkolhatk/.local/lib/python3.5/site-packages/werkzeug/serving.py", line 577, in __init__
+    self.address_family), handler)
+  File "/home/vkolhatk/anaconda3/envs/py35/lib/python3.5/socketserver.py", line 440, in __init__
+    self.server_bind()
+  File "/home/vkolhatk/anaconda3/envs/py35/lib/python3.5/http/server.py", line 138, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/home/vkolhatk/anaconda3/envs/py35/lib/python3.5/socketserver.py", line 454, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+2019-01-09 14:09:50.610098: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2019-01-09 14:09:50.629242: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2019-01-09 14:09:50.629254: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2019-01-09 14:09:50.629259: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2019-01-09 14:09:50.629263: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+2019-01-09 14:09:50.810004: I tensorflow/core/common_runtime/gpu/gpu_device.cc:955] Found device 0 with properties: 
+name: TITAN Xp
+major: 6 minor: 1 memoryClockRate (GHz) 1.582
+pciBusID 0000:02:00.0
+Total memory: 11.90GiB
+Free memory: 11.70GiB
+2019-01-09 14:09:50.810032: I tensorflow/core/common_runtime/gpu/gpu_device.cc:976] DMA: 0 
+2019-01-09 14:09:50.810045: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 0:   Y 
+2019-01-09 14:09:50.810052: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: TITAN Xp, pci bus id: 0000:02:00.0)
+2019-01-09 14:10:00.202751: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: TITAN Xp, pci bus id: 0000:02:00.0)
+2019-01-09 14:10:00.248938: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: TITAN Xp, pci bus id: 0000:02:00.0)
+/home/vkolhatk/anaconda3/envs/py35/lib/python3.5/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+INFO:tensorflow:Restoring parameters from /home/vkolhatk/data/Constructiveness_public/models/SOCC_bilstm.tflearn
+2019-01-09 14:10:01.470119: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: TITAN Xp, pci bus id: 0000:02:00.0)
+ * Running on http://localhost:9898/ (Press CTRL+C to quit)
+127.0.0.1 - - [09/Jan/2019 14:11:48] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [09/Jan/2019 14:11:48] "[37mGET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [09/Jan/2019 14:11:48] "[37mGET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [09/Jan/2019 14:11:49] "[37mGET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [09/Jan/2019 14:11:49] "[37mGET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [09/Jan/2019 14:11:49] "[37mGET /static/vendor/jquery/jquery.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [09/Jan/2019 14:11:49] "[37mGET /static/css/freelancer.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [09/Jan/2019 14:11:49] "[37mGET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [09/Jan/2019 14:11:49] "[37mGET /static/vendor/magnific-popup/jquery.magnific-popup.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [09/Jan/2019 14:11:49] "[37mGET /static/js/jqBootstrapValidation.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [09/Jan/2019 14:11:49] "[37mGET /static/js/contact_me.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [09/Jan/2019 14:11:49] "[37mGET /static/js/freelancer.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [09/Jan/2019 14:11:49] "[37mGET /static/js/hiding_articles.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [09/Jan/2019 14:11:49] "[37mGET /static/js/hiding_feedback.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [09/Jan/2019 14:11:49] "[37mGET /static/js/showing_feedback_button.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [09/Jan/2019 14:11:49] "[37mGET /static/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [09/Jan/2019 14:11:49] "[37mGET /static/img/SFU_logo_both.png HTTP/1.1[0m" 200 -
+127.0.0.1 - - [09/Jan/2019 21:01:11] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+127.0.0.1 - - [09/Jan/2019 21:01:11] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [09/Jan/2019 21:01:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [09/Jan/2019 21:04:40] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [10/Jan/2019 17:10:32] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+127.0.0.1 - - [10/Jan/2019 17:10:36] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [10/Jan/2019 17:10:45] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+127.0.0.1 - - [10/Jan/2019 17:10:47] "[37mGET /static/vendor/jquery/jquery.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [10/Jan/2019 17:10:48] "[37mGET /static/css/freelancer.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [10/Jan/2019 17:10:48] "[37mGET /static/js/jqBootstrapValidation.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [10/Jan/2019 17:10:48] "[37mGET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [10/Jan/2019 17:10:48] "[37mGET /static/vendor/magnific-popup/jquery.magnific-popup.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [10/Jan/2019 17:10:54] "[37mGET /static/js/contact_me.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [10/Jan/2019 17:10:54] "[37mGET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [10/Jan/2019 17:11:11] "[37mGET /static/js/freelancer.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [10/Jan/2019 17:11:11] "[37mGET /static/js/hiding_articles.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [10/Jan/2019 17:11:11] "[37mGET /static/js/hiding_feedback.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [10/Jan/2019 17:11:12] "[37mGET /static/js/showing_feedback_button.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [10/Jan/2019 17:11:12] "[37mGET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [10/Jan/2019 17:11:15] "[37mGET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [10/Jan/2019 17:11:16] "[37mGET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [10/Jan/2019 18:12:24] "[37mGET /static/vendor/font-awesome/fonts/fontawesome-webfont.svg?v=4.7.0 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [10/Jan/2019 18:12:25] "[37mGET /static/vendor/font-awesome/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2019 09:12:28] "[33mGET /robots.txt HTTP/1.0[0m" 404 -
+127.0.0.1 - - [16/Jan/2019 09:12:28] "[37mGET / HTTP/1.0[0m" 200 -
+127.0.0.1 - - [16/Jan/2019 09:53:12] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+127.0.0.1 - - [16/Jan/2019 09:53:12] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2019 09:54:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [16/Jan/2019 10:13:13] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Jan/2019 13:27:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [17/Jan/2019 19:30:58] "[37mGET / HTTP/1.1[0m" 200 -
+2019-01-28 13:17:54.503257: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2019-01-28 13:17:54.527978: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2019-01-28 13:17:54.527990: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2019-01-28 13:17:54.527994: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2019-01-28 13:17:54.527998: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+2019-01-28 13:17:54.704879: I tensorflow/core/common_runtime/gpu/gpu_device.cc:955] Found device 0 with properties: 
+name: TITAN Xp
+major: 6 minor: 1 memoryClockRate (GHz) 1.582
+pciBusID 0000:02:00.0
+Total memory: 11.90GiB
+Free memory: 11.56GiB
+2019-01-28 13:17:54.704907: I tensorflow/core/common_runtime/gpu/gpu_device.cc:976] DMA: 0 
+2019-01-28 13:17:54.704913: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 0:   Y 
+2019-01-28 13:17:54.704919: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: TITAN Xp, pci bus id: 0000:02:00.0)
+2019-01-28 13:18:04.020638: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: TITAN Xp, pci bus id: 0000:02:00.0)
+2019-01-28 13:18:04.076814: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: TITAN Xp, pci bus id: 0000:02:00.0)
+/home/vkolhatk/anaconda3/envs/py35/lib/python3.5/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+INFO:tensorflow:Restoring parameters from /home/vkolhatk/data/Constructiveness_public/models/SOCC_bilstm.tflearn
+2019-01-28 13:18:05.350386: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: TITAN Xp, pci bus id: 0000:02:00.0)
+ * Running on http://localhost:9898/ (Press CTRL+C to quit)
+127.0.0.1 - - [28/Jan/2019 13:18:32] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Jan/2019 13:18:32] "[37mGET /static/vendor/jquery/jquery.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Jan/2019 13:18:32] "[37mGET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Jan/2019 13:18:32] "[37mGET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Jan/2019 13:18:32] "[37mGET /static/css/freelancer.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Jan/2019 13:18:32] "[37mGET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Jan/2019 13:18:32] "[37mGET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Jan/2019 13:18:33] "[37mGET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Jan/2019 13:18:33] "[37mGET /static/vendor/magnific-popup/jquery.magnific-popup.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Jan/2019 13:18:33] "[37mGET /static/js/jqBootstrapValidation.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Jan/2019 13:18:33] "[37mGET /static/js/contact_me.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Jan/2019 13:18:33] "[37mGET /static/js/freelancer.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Jan/2019 13:18:33] "[37mGET /static/js/hiding_articles.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Jan/2019 13:18:33] "[37mGET /static/js/hiding_feedback.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Jan/2019 13:18:33] "[37mGET /static/js/showing_feedback_button.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Jan/2019 13:18:33] "[37mGET /static/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Jan/2019 13:18:33] "[37mGET /static/img/SFU_logo_both.png HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Jan/2019 13:18:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [28/Jan/2019 13:20:03] "[37mGET /get_prediction?result=Don%27t%20need%20an%20inquiry%2C%20the%20problems%20are%20self%20evident%20as%20are%20the%20solutions.%20The%20current%20system%20has%20been%20tested%20for%20decades%20with%20increasingly%20disastrous%20results%2C%20perhaps%20the%20whole%20system%20is%20flawed%20and%20should%20be%20replaced.%20&model=lstm HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Jan/2019 21:58:10] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+127.0.0.1 - - [28/Jan/2019 21:58:10] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Jan/2019 21:58:13] "[37mGET /static/js/jqBootstrapValidation.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Jan/2019 21:58:13] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Jan/2019 21:58:14] "[37mGET /static/js/contact_me.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Jan/2019 21:58:14] "[37mGET /static/vendor/jquery/jquery.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Jan/2019 21:58:14] "[37mGET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Jan/2019 21:58:15] "[37mGET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Jan/2019 21:58:15] "[37mGET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Jan/2019 21:58:16] "[37mGET /static/js/showing_feedback_button.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Jan/2019 21:58:16] "[37mGET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Jan/2019 21:58:17] "[37mGET /static/js/hiding_feedback.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Jan/2019 21:58:18] "[37mGET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Jan/2019 21:58:18] "[37mGET /static/css/freelancer.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Jan/2019 21:58:19] "[37mGET /static/js/hiding_articles.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Jan/2019 21:58:19] "[37mGET /static/js/freelancer.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Jan/2019 21:58:20] "[37mGET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Jan/2019 21:58:21] "[37mGET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Jan/2019 21:58:21] "[37mGET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Jan/2019 21:58:22] "[37mGET /static/js/freelancer.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Jan/2019 21:58:22] "[37mGET /static/js/showing_feedback_button.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Jan/2019 21:58:22] "[37mGET /static/js/hiding_articles.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Jan/2019 21:58:24] "[37mGET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Jan/2019 21:58:24] "[37mGET /static/vendor/magnific-popup/jquery.magnific-popup.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Jan/2019 21:58:24] "[37mGET /static/css/freelancer.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Jan/2019 21:58:25] "[37mGET /static/js/hiding_feedback.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Jan/2019 21:58:25] "[37mGET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Jan/2019 21:58:26] "[37mGET /static/vendor/jquery/jquery.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [28/Jan/2019 21:58:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [28/Jan/2019 23:37:23] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [29/Jan/2019 01:52:22] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [29/Jan/2019 01:52:34] "[37mGET /static/js/freelancer.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [29/Jan/2019 01:52:34] "[37mGET /static/js/hiding_articles.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [29/Jan/2019 01:52:34] "[37mGET /static/js/hiding_feedback.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [29/Jan/2019 01:52:34] "[37mGET /static/js/showing_feedback_button.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [29/Jan/2019 01:52:35] "[37mGET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [29/Jan/2019 01:52:35] "[37mGET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [29/Jan/2019 01:52:36] "[37mGET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [29/Jan/2019 01:52:40] "[37mGET /static/js/contact_me.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [29/Jan/2019 01:52:40] "[37mGET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [29/Jan/2019 01:52:46] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+127.0.0.1 - - [29/Jan/2019 01:52:46] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+127.0.0.1 - - [29/Jan/2019 01:52:46] "[37mGET /static/vendor/jquery/jquery.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [29/Jan/2019 01:54:01] "[37mGET /static/css/freelancer.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [29/Jan/2019 01:54:01] "[37mGET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [29/Jan/2019 01:54:05] "[37mGET /static/vendor/magnific-popup/jquery.magnific-popup.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [29/Jan/2019 01:54:08] "[37mGET /static/js/jqBootstrapValidation.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [01/Feb/2019 14:50:30] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [01/Feb/2019 14:50:31] "[37mGET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [01/Feb/2019 14:50:31] "[37mGET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [01/Feb/2019 14:50:31] "[37mGET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [01/Feb/2019 14:50:31] "[37mGET /static/css/freelancer.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [01/Feb/2019 14:50:31] "[37mGET /static/vendor/jquery/jquery.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [01/Feb/2019 14:50:31] "[37mGET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [01/Feb/2019 14:50:31] "[37mGET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [01/Feb/2019 14:50:31] "[37mGET /static/vendor/magnific-popup/jquery.magnific-popup.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [01/Feb/2019 14:50:31] "[37mGET /static/js/jqBootstrapValidation.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [01/Feb/2019 14:50:31] "[37mGET /static/js/contact_me.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [01/Feb/2019 14:50:31] "[37mGET /static/js/freelancer.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [01/Feb/2019 14:50:31] "[37mGET /static/js/hiding_articles.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [01/Feb/2019 14:50:31] "[37mGET /static/js/hiding_feedback.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [01/Feb/2019 14:50:31] "[37mGET /static/js/showing_feedback_button.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [01/Feb/2019 14:50:31] "[37mGET /static/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [01/Feb/2019 14:50:31] "[37mGET /static/img/SFU_logo_both.png HTTP/1.1[0m" 200 -
+127.0.0.1 - - [01/Feb/2019 14:50:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [02/Feb/2019 12:14:12] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+127.0.0.1 - - [02/Feb/2019 12:14:12] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [03/Feb/2019 12:21:56] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+127.0.0.1 - - [03/Feb/2019 12:21:56] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [03/Feb/2019 12:21:59] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [03/Feb/2019 12:22:04] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [03/Feb/2019 14:14:23] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [04/Feb/2019 05:49:24] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [04/Feb/2019 05:49:31] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [04/Feb/2019 05:49:31] "[37mGET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [04/Feb/2019 05:49:31] "[37mGET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [04/Feb/2019 05:49:31] "[37mGET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [04/Feb/2019 05:49:32] "[37mGET /static/css/freelancer.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [04/Feb/2019 05:49:32] "[37mGET /static/img/SFU_logo_both.png HTTP/1.1[0m" 200 -
+127.0.0.1 - - [04/Feb/2019 05:49:32] "[37mGET /static/vendor/jquery/jquery.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [04/Feb/2019 05:49:32] "[37mGET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [04/Feb/2019 05:49:32] "[37mGET /static/vendor/magnific-popup/jquery.magnific-popup.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [04/Feb/2019 05:49:33] "[37mGET /static/js/jqBootstrapValidation.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [04/Feb/2019 05:49:33] "[37mGET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [04/Feb/2019 05:49:33] "[37mGET /static/js/contact_me.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [04/Feb/2019 05:49:33] "[37mGET /static/js/freelancer.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [04/Feb/2019 05:49:33] "[37mGET /static/js/hiding_articles.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [04/Feb/2019 05:49:33] "[37mGET /static/js/hiding_feedback.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [04/Feb/2019 05:49:33] "[37mGET /static/js/showing_feedback_button.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [04/Feb/2019 05:49:33] "[37mGET /static/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [04/Feb/2019 05:49:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [05/Feb/2019 23:50:08] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [05/Feb/2019 23:50:09] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [05/Feb/2019 23:50:09] "[37mGET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [05/Feb/2019 23:50:09] "[37mGET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [05/Feb/2019 23:50:09] "[37mGET /static/img/SFU_logo_both.png HTTP/1.1[0m" 200 -
+127.0.0.1 - - [05/Feb/2019 23:50:09] "[37mGET /static/css/freelancer.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [05/Feb/2019 23:50:09] "[37mGET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [05/Feb/2019 23:50:09] "[37mGET /static/vendor/jquery/jquery.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [05/Feb/2019 23:50:10] "[37mGET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [05/Feb/2019 23:50:10] "[37mGET /static/js/jqBootstrapValidation.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [05/Feb/2019 23:50:10] "[37mGET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [05/Feb/2019 23:50:10] "[37mGET /static/vendor/magnific-popup/jquery.magnific-popup.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [05/Feb/2019 23:50:10] "[37mGET /static/js/freelancer.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [05/Feb/2019 23:50:10] "[37mGET /static/js/contact_me.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [05/Feb/2019 23:50:11] "[37mGET /static/js/hiding_articles.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [05/Feb/2019 23:50:11] "[37mGET /static/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [05/Feb/2019 23:50:11] "[37mGET /static/js/hiding_feedback.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [05/Feb/2019 23:50:11] "[37mGET /static/js/showing_feedback_button.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 00:45:32] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 00:45:33] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 00:45:35] "[37mGET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 00:45:36] "[37mGET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 00:45:36] "[37mGET /static/vendor/jquery/jquery.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 00:45:36] "[37mGET /static/css/freelancer.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 00:45:36] "[37mGET /static/img/SFU_logo_both.png HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 00:45:36] "[37mGET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 00:45:40] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 00:45:40] "[37mGET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 00:45:40] "[37mGET /static/css/freelancer.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 00:45:40] "[37mGET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 00:45:40] "[37mGET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 00:45:40] "[37mGET /static/img/SFU_logo_both.png HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 00:45:40] "[37mGET /static/vendor/jquery/jquery.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 00:45:41] "[37mGET /static/js/jqBootstrapValidation.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 00:45:41] "[37mGET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 00:45:41] "[37mGET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 00:45:41] "[37mGET /static/vendor/magnific-popup/jquery.magnific-popup.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 00:45:41] "[37mGET /static/js/contact_me.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 00:45:41] "[37mGET /static/js/freelancer.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 00:45:41] "[37mGET /static/js/hiding_articles.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 00:45:41] "[37mGET /static/js/hiding_feedback.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 00:45:41] "[37mGET /static/js/showing_feedback_button.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 00:45:41] "[37mGET /static/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 01:15:47] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 01:59:26] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 01:59:27] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 01:59:27] "[37mGET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 01:59:27] "[37mGET /static/css/freelancer.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 01:59:27] "[37mGET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 01:59:27] "[37mGET /static/vendor/jquery/jquery.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 01:59:27] "[37mGET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 01:59:27] "[37mGET /static/img/SFU_logo_both.png HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 01:59:28] "[37mGET /static/js/jqBootstrapValidation.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 01:59:28] "[37mGET /static/vendor/magnific-popup/jquery.magnific-popup.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 01:59:28] "[37mGET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 01:59:28] "[37mGET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 01:59:28] "[37mGET /static/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 01:59:28] "[37mGET /static/js/contact_me.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 01:59:28] "[37mGET /static/js/hiding_feedback.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 01:59:28] "[37mGET /static/js/freelancer.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 01:59:28] "[37mGET /static/js/hiding_articles.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 01:59:28] "[37mGET /static/js/showing_feedback_button.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 02:54:05] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 02:54:06] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 02:54:06] "[37mGET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 02:54:06] "[37mGET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 02:54:06] "[37mGET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 02:54:06] "[37mGET /static/css/freelancer.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 02:54:06] "[37mGET /static/img/SFU_logo_both.png HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 02:54:06] "[37mGET /static/vendor/jquery/jquery.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 02:54:07] "[37mGET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 02:54:07] "[37mGET /static/vendor/magnific-popup/jquery.magnific-popup.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 02:54:07] "[37mGET /static/js/jqBootstrapValidation.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 02:54:07] "[37mGET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 02:54:07] "[37mGET /static/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 02:54:07] "[37mGET /static/js/contact_me.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 02:54:07] "[37mGET /static/js/freelancer.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 02:54:07] "[37mGET /static/js/hiding_articles.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 02:54:07] "[37mGET /static/js/hiding_feedback.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 02:54:07] "[37mGET /static/js/showing_feedback_button.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 02:54:34] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 02:54:35] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 02:54:35] "[37mGET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 02:54:35] "[37mGET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 02:54:35] "[37mGET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 02:54:35] "[37mGET /static/vendor/jquery/jquery.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 02:54:35] "[37mGET /static/css/freelancer.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 02:54:35] "[37mGET /static/img/SFU_logo_both.png HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 02:54:36] "[37mGET /static/vendor/magnific-popup/jquery.magnific-popup.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 02:54:36] "[37mGET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 02:54:36] "[37mGET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 02:54:36] "[37mGET /static/js/jqBootstrapValidation.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 02:54:36] "[37mGET /static/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 02:54:36] "[37mGET /static/js/contact_me.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 02:54:36] "[37mGET /static/js/freelancer.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 02:54:36] "[37mGET /static/js/hiding_articles.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 02:54:36] "[37mGET /static/js/hiding_feedback.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 02:54:36] "[37mGET /static/js/showing_feedback_button.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 03:20:39] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 03:20:40] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 03:20:40] "[37mGET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 03:20:40] "[37mGET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 03:20:40] "[37mGET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 03:20:40] "[37mGET /static/img/SFU_logo_both.png HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 03:20:40] "[37mGET /static/vendor/jquery/jquery.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 03:20:40] "[37mGET /static/css/freelancer.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 03:20:41] "[37mGET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 03:20:41] "[37mGET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 03:20:41] "[37mGET /static/js/jqBootstrapValidation.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 03:20:41] "[37mGET /static/js/contact_me.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 03:20:42] "[37mGET /static/vendor/magnific-popup/jquery.magnific-popup.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 03:20:42] "[37mGET /static/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 03:20:42] "[37mGET /static/js/freelancer.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 03:20:42] "[37mGET /static/js/hiding_articles.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 03:20:42] "[37mGET /static/js/hiding_feedback.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 03:20:42] "[37mGET /static/js/showing_feedback_button.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 04:05:21] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 04:05:22] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 04:05:22] "[37mGET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 04:05:22] "[37mGET /static/img/SFU_logo_both.png HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 04:05:22] "[37mGET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 04:05:22] "[37mGET /static/vendor/jquery/jquery.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 04:05:22] "[37mGET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 04:05:22] "[37mGET /static/css/freelancer.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 04:05:23] "[37mGET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 04:05:23] "[37mGET /static/vendor/magnific-popup/jquery.magnific-popup.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 04:05:23] "[37mGET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 04:05:23] "[37mGET /static/js/jqBootstrapValidation.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 04:05:23] "[37mGET /static/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 04:05:23] "[37mGET /static/js/contact_me.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 04:05:24] "[37mGET /static/js/freelancer.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 04:05:24] "[37mGET /static/js/hiding_articles.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 04:05:24] "[37mGET /static/js/hiding_feedback.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 04:05:24] "[37mGET /static/js/showing_feedback_button.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 08:20:31] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 08:20:32] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 08:20:32] "[37mGET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 08:20:32] "[37mGET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 08:20:32] "[37mGET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 08:20:32] "[37mGET /static/img/SFU_logo_both.png HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 08:20:32] "[37mGET /static/css/freelancer.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 08:20:32] "[37mGET /static/vendor/jquery/jquery.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 08:20:33] "[37mGET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 08:20:33] "[37mGET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 08:20:33] "[37mGET /static/js/jqBootstrapValidation.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 08:20:33] "[37mGET /static/vendor/magnific-popup/jquery.magnific-popup.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 08:20:33] "[37mGET /static/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 08:20:33] "[37mGET /static/js/contact_me.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 08:20:33] "[37mGET /static/js/freelancer.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 08:20:33] "[37mGET /static/js/hiding_articles.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 08:20:33] "[37mGET /static/js/hiding_feedback.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 08:20:33] "[37mGET /static/js/showing_feedback_button.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 08:26:15] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 08:26:15] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 08:26:16] "[37mGET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 08:26:16] "[37mGET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 08:26:16] "[37mGET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 08:26:16] "[37mGET /static/css/freelancer.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 08:26:16] "[37mGET /static/img/SFU_logo_both.png HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 08:26:16] "[37mGET /static/vendor/jquery/jquery.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 08:26:16] "[37mGET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 08:26:16] "[37mGET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 08:26:16] "[37mGET /static/vendor/magnific-popup/jquery.magnific-popup.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 08:26:16] "[37mGET /static/js/jqBootstrapValidation.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 08:26:16] "[37mGET /static/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 08:26:16] "[37mGET /static/js/contact_me.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 08:26:16] "[37mGET /static/js/freelancer.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 08:26:16] "[37mGET /static/js/hiding_articles.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 08:26:16] "[37mGET /static/js/hiding_feedback.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 08:26:16] "[37mGET /static/js/showing_feedback_button.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 09:58:35] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 09:58:35] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 09:58:36] "[37mGET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 09:58:36] "[37mGET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 09:58:36] "[37mGET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 09:58:36] "[37mGET /static/css/freelancer.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 09:58:36] "[37mGET /static/img/SFU_logo_both.png HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 09:58:36] "[37mGET /static/vendor/jquery/jquery.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 09:58:37] "[37mGET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 09:58:37] "[37mGET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 09:58:37] "[37mGET /static/vendor/magnific-popup/jquery.magnific-popup.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 09:58:37] "[37mGET /static/js/jqBootstrapValidation.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 09:58:37] "[37mGET /static/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 09:58:37] "[37mGET /static/js/contact_me.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 09:58:37] "[37mGET /static/js/freelancer.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 09:58:37] "[37mGET /static/js/hiding_feedback.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 09:58:37] "[37mGET /static/js/hiding_articles.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 09:58:37] "[37mGET /static/js/showing_feedback_button.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 10:07:02] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 10:07:02] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 10:07:03] "[37mGET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 10:07:03] "[37mGET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 10:07:03] "[37mGET /static/vendor/jquery/jquery.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 10:07:03] "[37mGET /static/css/freelancer.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 10:07:03] "[37mGET /static/img/SFU_logo_both.png HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 10:07:03] "[37mGET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 10:07:03] "[37mGET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 10:07:03] "[37mGET /static/vendor/magnific-popup/jquery.magnific-popup.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 10:07:03] "[37mGET /static/js/jqBootstrapValidation.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 10:07:03] "[37mGET /static/js/contact_me.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 10:07:03] "[37mGET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 10:07:04] "[37mGET /static/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 10:07:04] "[37mGET /static/js/hiding_articles.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 10:07:04] "[37mGET /static/js/freelancer.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 10:07:04] "[37mGET /static/js/hiding_feedback.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 10:07:04] "[37mGET /static/js/showing_feedback_button.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 15:22:22] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+127.0.0.1 - - [06/Feb/2019 15:22:28] "[37mGET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 17:41:55] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 17:45:56] "[37mGET /static/img/SFU_logo_both.png HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 19:08:08] "[37mGET /static/js/hiding_articles.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 19:08:08] "[37mGET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 19:08:09] "[37mGET /static/js/contact_me.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 19:08:09] "[37mGET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 19:08:10] "[37mGET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 19:08:11] "[37mGET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 19:08:12] "[37mGET /static/css/freelancer.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 19:08:13] "[37mGET /static/js/jqBootstrapValidation.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 19:08:14] "[37mGET /static/js/freelancer.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 19:08:15] "[37mGET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 19:08:16] "[37mGET /static/vendor/magnific-popup/jquery.magnific-popup.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 19:08:16] "[37mGET /static/js/hiding_feedback.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [06/Feb/2019 19:08:17] "[37mGET /static/js/showing_feedback_button.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [09/Feb/2019 02:48:24] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+127.0.0.1 - - [09/Feb/2019 02:48:24] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [09/Feb/2019 02:48:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [09/Feb/2019 02:48:34] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [09/Feb/2019 04:56:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [09/Feb/2019 09:26:13] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+127.0.0.1 - - [09/Feb/2019 09:26:13] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [11/Feb/2019 01:46:06] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+127.0.0.1 - - [11/Feb/2019 01:46:09] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [13/Feb/2019 14:46:03] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+127.0.0.1 - - [13/Feb/2019 14:46:04] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [13/Feb/2019 17:52:38] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+127.0.0.1 - - [13/Feb/2019 17:52:38] "[33mGET /sitemap.xml HTTP/1.1[0m" 404 -
+127.0.0.1 - - [14/Feb/2019 09:10:55] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [14/Feb/2019 09:10:55] "[37mGET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [14/Feb/2019 09:10:55] "[37mGET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [14/Feb/2019 09:10:55] "[37mGET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [14/Feb/2019 09:10:55] "[37mGET /static/css/freelancer.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [14/Feb/2019 09:10:55] "[37mGET /static/img/SFU_logo_both.png HTTP/1.1[0m" 200 -
+127.0.0.1 - - [14/Feb/2019 09:10:55] "[37mGET /static/vendor/jquery/jquery.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [14/Feb/2019 09:10:56] "[37mGET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [14/Feb/2019 09:10:56] "[37mGET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [14/Feb/2019 09:10:56] "[37mGET /static/vendor/magnific-popup/jquery.magnific-popup.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [14/Feb/2019 09:10:56] "[37mGET /static/js/jqBootstrapValidation.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [14/Feb/2019 09:10:56] "[37mGET /static/js/freelancer.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [14/Feb/2019 09:10:56] "[37mGET /static/js/contact_me.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [14/Feb/2019 09:10:56] "[37mGET /static/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [14/Feb/2019 09:10:56] "[37mGET /static/js/hiding_articles.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [14/Feb/2019 09:10:56] "[37mGET /static/js/hiding_feedback.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [14/Feb/2019 09:10:56] "[37mGET /static/js/showing_feedback_button.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [14/Feb/2019 09:10:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [14/Feb/2019 20:51:39] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+127.0.0.1 - - [14/Feb/2019 20:51:39] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [14/Feb/2019 20:51:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [14/Feb/2019 20:52:09] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [14/Feb/2019 22:53:57] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+127.0.0.1 - - [14/Feb/2019 22:54:01] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [14/Feb/2019 22:54:05] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+127.0.0.1 - - [14/Feb/2019 22:54:11] "[37mGET /static/js/contact_me.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [14/Feb/2019 22:54:12] "[37mGET /static/vendor/jquery-easing/jquery.easing.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [14/Feb/2019 22:54:16] "[37mGET /static/js/freelancer.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [14/Feb/2019 22:54:16] "[37mGET /static/js/hiding_articles.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [14/Feb/2019 22:54:16] "[37mGET /static/js/hiding_feedback.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [14/Feb/2019 22:54:17] "[37mGET /static/js/showing_feedback_button.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [14/Feb/2019 22:54:17] "[37mGET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [14/Feb/2019 22:54:18] "[37mGET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [14/Feb/2019 22:54:18] "[37mGET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [14/Feb/2019 22:54:22] "[37mGET /static/vendor/jquery/jquery.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [14/Feb/2019 22:54:28] "[37mGET /static/css/freelancer.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [14/Feb/2019 22:54:28] "[37mGET /static/js/jqBootstrapValidation.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [14/Feb/2019 22:54:28] "[37mGET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [14/Feb/2019 22:54:29] "[37mGET /static/vendor/magnific-popup/jquery.magnific-popup.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [14/Feb/2019 23:55:24] "[37mGET /static/vendor/font-awesome/fonts/fontawesome-webfont.svg?v=4.7.0 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [14/Feb/2019 23:55:25] "[37mGET /static/vendor/font-awesome/fonts/fontawesome-webfont.ttf?v=4.7.0 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [15/Feb/2019 03:34:23] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [15/Feb/2019 14:32:58] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+127.0.0.1 - - [15/Feb/2019 14:32:58] "[37mGET /get_prediction HTTP/1.1[0m" 200 -
+[2019-02-15 17:34:21,782] ERROR in app: Exception on /get_feedback [GET]
+Traceback (most recent call last):
+  File "/home/vkolhatk/anaconda3/envs/py35/lib/python3.5/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/vkolhatk/anaconda3/envs/py35/lib/python3.5/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/vkolhatk/anaconda3/envs/py35/lib/python3.5/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/vkolhatk/anaconda3/envs/py35/lib/python3.5/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/vkolhatk/anaconda3/envs/py35/lib/python3.5/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/vkolhatk/anaconda3/envs/py35/lib/python3.5/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 63, in get_feedback
+    with open(Config.FEEDBACK_CSV_PATH, 'a+', newline='') as csvfile:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/vkolhatk/data/Constructiveness_public/feedback/feedback.csv'
+127.0.0.1 - - [15/Feb/2019 17:34:21] "[1m[35mGET /get_feedback HTTP/1.1[0m" 500 -
+127.0.0.1 - - [16/Feb/2019 04:16:32] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+127.0.0.1 - - [16/Feb/2019 04:16:33] "[37mGET /get_sample_comment HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Feb/2019 07:20:17] "[37mGET /get_prediction HTTP/1.1[0m" 200 -
+127.0.0.1 - - [16/Feb/2019 12:01:29] "[33mGET /robots.txt HTTP/1.0[0m" 404 -
+127.0.0.1 - - [16/Feb/2019 12:01:29] "[37mGET / HTTP/1.0[0m" 200 -
+127.0.0.1 - - [18/Feb/2019 04:05:41] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+127.0.0.1 - - [18/Feb/2019 04:07:44] "[37mGET /get_sample_comment HTTP/1.1[0m" 200 -
+127.0.0.1 - - [20/Feb/2019 14:21:37] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+127.0.0.1 - - [20/Feb/2019 14:21:38] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [20/Feb/2019 14:21:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [20/Feb/2019 14:21:45] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [20/Feb/2019 16:16:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+127.0.0.1 - - [21/Feb/2019 08:16:54] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+127.0.0.1 - - [21/Feb/2019 08:16:54] "[37mGET / HTTP/1.1[0m" 200 -
+127.0.0.1 - - [21/Feb/2019 08:17:01] "[37mGET /static/js/hiding_feedback.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [21/Feb/2019 08:17:02] "[37mGET /static/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [21/Feb/2019 08:17:02] "[37mGET /static/js/showing_feedback_button.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [21/Feb/2019 08:17:03] "[37mGET /static/css/freelancer.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [21/Feb/2019 08:17:04] "[37mGET /static/vendor/jquery/jquery.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [21/Feb/2019 08:17:04] "[37mGET /static/js/hiding_articles.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [21/Feb/2019 08:17:05] "[37mGET /static/vendor/magnific-popup/magnific-popup.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [21/Feb/2019 08:17:05] "[37mGET /static/js/contact_me.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [21/Feb/2019 08:17:06] "[37mGET /static/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [21/Feb/2019 08:17:06] "[37mGET /static/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+127.0.0.1 - - [21/Feb/2019 08:17:07] "[37mGET /static/vendor/magnific-popup/jquery.magnific-popup.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [21/Feb/2019 08:17:07] "[37mGET /static/js/jqBootstrapValidation.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [21/Feb/2019 08:17:08] "[37mGET /static/js/freelancer.min.js HTTP/1.1[0m" 200 -
+127.0.0.1 - - [22/Feb/2019 08:31:07] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+127.0.0.1 - - [22/Feb/2019 08:31:07] "[37mGET / HTTP/1.1[0m" 200 -

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Comment Moderation</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="static/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link href="static/vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="static/css/freelancer.min.css" rel="stylesheet">
+
+    <!-- AJAX -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Discourse Processing Lab</a>
+        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mx-0 mx-lg-1">
+              <div class="btn-group">
+                  <button type="button" data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Information <span class="caret"></span></button>
+                  <ul class="dropdown-menu" style="text-align: center; vertical-align: middle;">
+                      <li><a href="#portfolio">Description</a></li>
+                      <li><a href="#footer">About Us</a></li>
+                  </ul>
+              </div>
+
+            </li>
+
+            <li class="nav-item mx-0 mx-lg-1">
+              <div class="btn-group">
+                  <button type="button" data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Comment Moderation <span class="caret"></span></button>
+                  <ul class="dropdown-menu" style="text-align: center; vertical-align: middle;">
+                      <li><a href="#cm_interface">Interface</a></li>
+                      <li><a href="#cm_examples">Examples</a></li>
+                  </ul>
+              </div>
+
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <!--header class="masthead bg-primary text-white text-center">
+      <div class="container">
+        <img class="img-fluid mb-5 d-block mx-auto" src="static/img/SFU_logo_both.png" alt="" width="400" height="400">
+        <!--img class="img-fluid mb-5 d-block mx-auto" src="static/img/SFU_StdTag-Horz_Pos_RGB.jpg" alt="" width="200" height="200"-->
+        <!--h1 class="text-uppercase mb-0" style="font-size: 3em">Comment Moderation</--h1-->
+        <!--hr class="star-light"-->
+        <!--h2 class="font-weight-light mb-0">Comment Moderation</h2-->
+      <!--/div-->
+    <!--/header-->
+
+    <!-- Portfolio Grid Section -->
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <div style="text-align: left; vertical-align: middle;">
+          <br>
+          <br>
+          <img class="img-fluid mb-5 d-block mx-auto" src="static/img/SFU_logo_both.png" alt="" width="400" height="400" align="center">
+          <br>
+          <br>
+          <h1 class="text-uppercase mb-0" style="color: #18bc9c">What if technology could help with moderating online content?</h1>
+          News organizations enable online commenting with the goal of increasing user engagement and enhancing the quality of news and information.
+          Unfortunately, online commenting platforms are often used as a place to vent anger, frustration, and express hatred, in general or towards specific groups.
+          While there is a clear value in including reader comments, news organizations find themselves having to sift through and organize comments to ensure that commenters exchange views, opinions, and insights in a respectful and constructive manner, and to keep the discussion relevant to the issues discussed in the article.
+          Our goal is to promote meaningful and constructive discussion online. Accordingly, we have developed computational methods to identify constructive comments.
+        <br>
+        <br>
+      </div>
+
+    <!-- Constructiveness Section -->
+    <section class="bg-primary text-white mb-0" id="cm_interface">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-white">Comment Moderation</h2>
+        <hr class="star-light mb-5">
+        <div class="row" style="display: flex; justify-content: space-around;">
+          <div>
+            <p class="lead">
+            <p>
+              Please select a model:
+            </p>
+
+            <form>
+              <input type="radio" name="model" value="svm" checked> Feature-based models <br>
+              <input type="radio" name="model" value="lstm"> Deep Learning models <br><br>
+              <!--a id="select_model"><button type="submit" class="btn btn-secondary btn-sm" id="sendMessageButton">Select</button></a-->
+            </form>
+
+            <!--script type=text/javascript>
+                $(function() {
+                  $('a#select_model').bind('click', function() {
+                    $.getJSON("/select_model", {
+                      result: $('input[name="model"]:checked').val(),
+                    }, function(data) {
+                      $("#temp").text(data.resp);
+                    });
+                    return false;
+                  });
+                });
+            </script-->
+
+            <!--div id="temp" style="color: red"></div-->
+
+          </div>
+
+
+          <div>
+            <p class="lead">
+              <form>
+                <b><label>Please enter your comment: </label></b>&nbsp;&nbsp;</br>
+                <a id="example_comment"><button type="submit" class="btn btn-secondary btn-sm" id="sendMessageButton">Example comment</button></a>&nbsp;&nbsp;
+                </br>
+                <!--input name=comment style="width: 600px; height:300px; border-radius: 5px"-->
+                <textarea id = "ctextarea" name="comment" style="width:600px;height:250px;border-radius: 5px"></textarea>
+
+                </br>
+                <a id="submit_button"><button type="submit" class="btn btn-secondary btn-sm" id="sendMessageButton" href="#want_feedback">Submit</button></a>&nbsp;&nbsp;
+                <a id="clear_button"><button type="submit" class="btn btn-secondary btn-sm" id="sendMessageButton">Clear</button></a>&nbsp;&nbsp;
+              </form>
+              <div id="prediction" style="color: red"></div>
+
+
+          <!--div>
+          <!-- bar chart canvas element <h3>Visualization</h3> -->
+            <!--canvas id="chart" width="600" height="400"></canvas>
+          </div-->
+
+              <br><a id="want_feedback" style="display: none"><button type="submit" class="btn btn-secondary btn-sm" id="sendMessageButton" href="#feedback_box">Seem wrong?</button></a><br>
+
+              <div id="feedback_box" style="display: none">
+                <p> How would you label the comment? </p>
+                <form>
+                    <input type="radio" name="answer" value="constructive"> Constructive<br>
+                    <input type="radio" name="answer" value="nonconstructive"> Non-Constructive<br>
+                    <input type="radio" name="answer" value="notsure"> Not Sure<br><br>
+                    <p>Do you have any comments?</p>
+                    <b><label>Comments: </label></b>&nbsp;&nbsp;
+                    <input name=comments style="width: 400px; border-radius: 5px">
+                    <a id="submit_response"><button type="submit" class="btn btn-secondary btn-sm" id="sendMessageButton">Submit Response</button></a>
+                </form>
+              </div>
+
+
+              <script type=text/javascript>
+                $(function() {
+                  $('a#example_comment').bind('click', function() {
+                    $.getJSON("/get_sample_comment", {
+                    }, function(data) {
+                      $('textarea[name="comment"]').val(data.sample_comment);
+                      $("#prediction").text('');
+                      $("#feedback").text('');
+                      $("#want_feedback").hide();
+                    });
+                    return false;
+                  });
+                });
+              </script>
+
+
+              <script type=text/javascript>
+                $(function() {
+                  $('a#clear_button').bind('click', function() {
+                     $('textarea[name="comment"]').val('');
+                     $("#prediction").text('');
+                     $("#feedback").text('');
+                     $("#want_feedback").hide();
+                     return false;
+                  });
+                });
+              </script>
+
+              <script type=text/javascript>
+                $(function() {
+                  $('a#submit_response').bind('click', function() {
+                    $.getJSON("/get_feedback", {
+                      comment_text: $('textarea[name="comment"]').val(),
+                      correct_label: $('input[name="answer"]:checked').val(),
+                      comments: $('input[name="comments"]').val(),
+                    }, function(data) {
+                      $("#feedback_box").toggle();
+                      $("#feedback").text(data.feedback);
+                    });
+                    return false;
+                  });
+                });
+              </script>
+
+
+              <script type=text/javascript>
+                $(function() {
+                  $('a#submit_button').bind('click', function() {
+                    $.getJSON("/get_prediction", {
+                      result: $('textarea[name="comment"]').val(),
+                      model: $('input[name="model"]:checked').val(),
+                    }, function(data) {
+                      $("#prediction").text(data.predicted_label);
+                    });
+                    return false;
+                  });
+                });
+              </script>
+
+              <!--script type=text/javascript>
+                $(function() {
+                  $('a#submit_button').bind('click', function() {
+                    $.getJSON("/get_prediction", {
+                      result: $('textarea[name="comment"]').val(),
+                      model: $('input[name="model"]:checked').val(),
+                    }, function(data) {
+                      $("#prediction").text(data.predicted_label);
+                      var chart_labels = data.chart_labels;
+                      var chart_values = data.chart_values;
+                      // bar chart data
+                       var barData = {
+                       labels : chart_labels,
+                       datasets : [
+                          {
+                                fillColor: "rgba(255,255,255,1.0)",
+                                strokeColor: "rgba(151,187,205,1)",
+                                pointColor: "rgba(151,187,205,1)",
+                             data : chart_values
+                          }
+                          ]
+                       }
+
+                     // get bar chart canvas
+                     var mychart = document.getElementById("chart").getContext("2d");
+
+                     steps = 6
+                     max = 3
+                     // draw bar chart
+                     new Chart(mychart).Bar(barData, {
+                          scaleOverride: true,
+                          scaleSteps: steps,
+                          scaleStepWidth: Math.ceil(max / steps),
+                          scaleStartValue: -3,
+                          scaleShowVerticalLines: true,
+                          scaleShowGridLines : true,
+                          barShowStroke : true,
+                          scaleShowLabels: true
+                     });
+
+                    });
+                    return false;
+                  });
+                });
+              </--script>
+
+              <script src='static/js/Chart.min.js'></script-->
+
+
+              <div id="feedback" style="color: red">
+              </div>
+
+            </p>
+          </div>
+
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="cm_examples">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">Examples</h2>
+        <hr class="star-dark mb-5">
+        <div class="row" style="display: flex; justify-content: space-around;">
+        <div>
+            <p class="lead">
+              <div class="btn-secondary" style="width: 900px; border-radius: 5px">
+                <div class="bg-secondary d-flex justify-content-around">
+                      <a class="article_1_link" href="#article1" >Missing Aboriginal Girl</a>
+
+                      <a class="article_2_link" href="#article2">National Daycare Plan</a>
+
+                      <a class="article_3_link" href="#article3" >US Election</a>
+                    </div>
+
+                  <div class="container-fluid" id="article1" style="display: none;">
+                    <div style="float: left; width: 50%; background-color: white; color: green">
+                      <h3 align="center">Constructive</h3>
+                      <ul>
+                        <!--li> I know First Nations people who survived the residential schools and have parented just fine. Their kids grew up in loving stable homes. </li-->
+                        <li> Don't need an inquiry, the problems are self evident as are the solutions. The current system has been tested for decades with increasingly disastrous results, perhaps the whole system is flawed and should be replaced. </li>
+                        <li> If it happens once in a while to everyone, it's a crime. If it happens disproportionately to a particular demographic, it's more than just a crime. Harper is way out to lunch on this one. This is not an issue the police can solve. It's going to take a society, a country, to do that, and that takes leadership and information.</li>
+                      </ul>
+                    </div>
+
+                    <div style="float: right; width: 50%; background-color: white; color: red">
+                      <h3 align="center">Non-constructive</h3>
+                      <ul>
+                        <li> Haul in all the Aboriginal guys and start questioning them... Violence starts at home as does everything else!! </li>
+                        <li> When you say 'we' don't have a strategy you mean all concerned not just the non FNs, right? </li>
+                        <li> What if it turns out most of the missing and murdered women met their fate because of aboriginal males? Just sayn. </li>
+                        <!--li> And much of this can be attributed the mismanagement on reserves? Maybe it's time to start asking ourselves whether reserves better or worsen the lives of aboriginals especially women. Unfortunately, the ones that get to answer that question for the Aboriginals are the select few that do benefit (Chiefs). </li-->
+                        <li> A reasonably good article. Barbra McDougal of all people should be in a position to kick start some meaningful solutions to this problem.</li>
+                        <li> I think well-intentioned people should stop muddying the waters of aboriginal poverty and social problems with the issue of violent crime against aboriginal women. </li>
+                        <li> Agreed, time to close the reserves or turn them into accountable municipal governments. </li>
+                      </ul>
+                    </div>
+
+                  </div>
+
+                  <div id="article2" style="display: none;">
+                    <div style="float: left; width: 50%; background-color: white; color: green">
+                      <h3 align="center">Constructive</h3>
+                      <ul>
+                        <li> This whole concept of 'national daycare' sounds far too idealistic. The he## is in the details as they say. Those on lower incomes who struggle to pay there rent and pay basic bills need help. In those cases, subsidised daycare could help both spouses to work outside the house without daycare draining all their efforts. But what about the majority of income earners. Do they really need government assistance? Many comfortably off people will shift their discretionary income (from saved daycare costs) to buy a larger house or more expensive doodads. That is hardly helping families truly in need. We need more targeted programs to help those with low incomes. Not a limousine style daycare system. I self define as liberal, but a very fiscally tight one.</li>
+                        <li> Simpson is right: it's a political winner and a policy dud - just political smoke and mirrors. Mulcair wants Canada to adopt a national childcare model so he can hang on to seats in Quebec, that's all. Years ago I worked with a political strategist working to get a Liberal candidate elected in Conservative Calgary. He actually told his client to talk about national daycare - this was in the early 90's. The Liberal candidate said, 'Canada can't afford that!' to which the strategist responded 'Just say the words, you don't have to actually do it. It'll be good for votes.' I could barely believe the cynicism, but over the years I've come to realize that's what it is: vote getting and power politics. Same thing here. </li>
+                        <li> We just have to look at Quebec taxes - which are highest in North America - and so called day care program which is impossible to get into - and their tax gestapo. This type of government is like insurance. You're buying daycare 'insurance' and then you pay for it all life long whether you want it or need it or not. The other issue is that it is a proven fact - programs runs by the government cost about 150% more than private sector and create huge bureaucracy. So the insurance is also likely to be disproportionately more costly.</li>
+                      </ul>
+                    </div>
+
+                    <div style="float: right; width: 50%; background-color: white; color: red">
+                      <h3 align="center">Non-constructive</h3>
+                      <ul>
+                        <li> Pay for your own kids' babysitting. The last thing that any problem needs is an NDP style, big goverment, one-size fits all approach. First, if it runs through Ottawa it's a colossal waste of money. Second, pay for your own kids' babysitting. You really can't stress the last point enough.</li>
+                        <li> The NDP want kids in a unionized environment from birth to the end of university. And then ideally as voters they will support the NDP's socialist agenda. What could go wrong? </li>
+                        <li> Why don't the NDP also promise 40 acres and a mule? They will never lead this country. Panderers to socialists and unionists. </li>
+                        <li> Any idiot can spend money, but it takes planning, priority setting and resolve to live within a budget. I'm still waiting for a politician and party with these traits. Don't worry, I won't hold my breath. </li>
+                        <li> The title of this article is all wrong. It should be.... As usual, NDP thinks big with other people money. </li>
+                        <li> Wow, what a great ideal. All we need to do now to start planting those money trees and everything will be okay. </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div id="article3" style="display: none">
+                    <div style="float: left; width: 50%; background-color: white; color: green">
+                      <h3 align="center">Constructive</h3>
+                      <ul>
+                        <li> I have 3 daughters, and I told them that Mrs. Clinton lost because she did not have a platform. If she did, she, and her party, did a poor job explaining it to the masses. The only message that I got from her was that Mr. Trump is not fit to be in office and that she wanted to be the first female President. I honestly believe that she lost because she offered no hope, or direction, to the average American. Mr. Trump, with all his shortcomings, at least offered change and some hope. He now has to make it happen or he will be out of power in 4 years. </li>
+                        <li> Just tell your daughters that Hillary won the popular vote and lost because of the peculiarities of the American system. Note too that some of our biggest provinces have female leaders so all is not lost. My daughters still have lots of hope.</li>
+                        <li> In my view, the failure of Hillary to win was nothing to do with gender, but all to do with the failure of the Democratic Party to look after the working class of America. Thomas Frank points out that Bill Clinton promised much to this group and then proceeded to sign NAFTA, which disadvantaged them. Similarly Bill and Hillary shifted welfare payments to the poor from the Fed Govt to the states, with disadvantage for those voters. He also suggests that another woman, Elizabeth Warren, would have done much better for the working classes and the poor; and Bernie Sanders might have obtained similarly high levels of support, eating into Trump's group of supporters. Frank R. Smith</li>
+                      </ul>
+                    </div>
+
+                    <div style="float: right; width: 50%; background-color: white; color: red">
+                      <h3 align="center">Non-constructive</h3>
+                      <ul>
+                        <li> she looks at Hillary and sees competence, others see Hillary and see sleaze. That's what happens when you place feminism above all else. She rails against misogyny but if enough money is waved in front of her nose she wouldn't hesitate to defend one by portraying them as an angel, oh, she did that recently, such high principles. </li>
+                        <li> Craven desperation exudes an unpleasant odour that repels many people. Trump wanted it but didn't need it. Clinton was almost sociopathic in her lust for it. People noticed. </li>
+                        <li> She lost because she was a weak leader, insider, scandal ridden, unrelatable, too scripted. We don't want to keep relitigating this. If she was a man, she would be Mitt Romney. And therefore would have lost. </li>
+                        <li> You do a disservice to all the women who have made it to the highest office in the land. Examples are numerous. Hilary lost because the electorate discovered she was a phony. Both men and women rejected her equally.</li>
+                        <li> This is not a woman issue. It is Hillary the person that people don't like. Trump is just being seen as the lesser evil. </li>
+                      </ul>
+                    </div>
+                  </div>
+              </div>
+
+            </p>
+          </div>
+
+      </div>
+    </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer text-center" id="footer">
+      <div class="container">
+        <div class="row" style="display: flex; justify-content: space-around;">
+          <div class="col-md-4">
+            <b><p class="lead mb-0">Varada Kolhatkar</p></b>
+            <p>Postdoctoral Fellow, Department of Linguistics</p>
+            <p>Simon Fraser University</p>
+            <a href="https://kvarada.github.io/">https://kvarada.github.io/</a>
+            <p>E-mail: vkolhatk@sfu.ca</p>
+          </div>
+
+          <div class="col-md-4">
+            <b><p class="lead mb-0">Maite Taboada</p></b>
+            <p>Professor, Department of Linguistics<p>
+            <p>Simon Fraser University</p>
+            <a href="https://www.sfu.ca/~mtaboada/">https://www.sfu.ca/~mtaboada/</a>
+            <p>E-mail: mtaboada@sfu.ca</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="static/vendor/jquery/jquery.min.js"></script>
+    <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="static/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="static/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="static/js/jqBootstrapValidation.js"></script>
+    <script src="static/js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="static/js/freelancer.min.js"></script>
+
+    <!-- For hiding and showing articles -->
+    <script src="static/js/hiding_articles.js"></script>
+    <script src="static/js/hiding_feedback.js"></script>
+    <script src="static/js/showing_feedback_button.js"></script>
+
+
+
+
+
+  </body>
+
+</html>
