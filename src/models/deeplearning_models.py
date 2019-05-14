@@ -226,14 +226,14 @@ class DLTextClassifier():
     
 
 if __name__=="__main__":    
-    print(os.environ['RAW'])
-    #df=pd.read_csv('/home/vkolhatk/dev/constructiveness/data/raw/constructiveness_and_toxicity_annotations_batches_1_to_12.csv')
-    #df['constructive_binary'] = df['constructive'].apply(lambda x: 1.0 if x > 0.5 else 0.0)
-    #X_train, X_test, y_train, y_test = train_test_split(df['comment_text'], 
-    #                                                    df['constructive_binary'], 
-    #                                                    test_size=0.2, 
-    #                                                    random_state=42)        
+    df = pd.read_csv(os.environ['PREPROCESSED'])
+    df['constructive_binary'] = df['constructive'].apply(lambda x: 1.0 if x > 0.5 else 0.0)
+    X_train, X_test, y_train, y_test = train_test_split(df['pp_comment_text'], 
+                                                        df['constructive_binary'], 
+                                                        test_size=0.2, 
+                                                        random_state=42)        
 
-    #lstm = DLTextClassifier()
-    #lstm.build_lstm()
-    #lstm.train(X_train, y_train)
+    lstm = DLTextClassifier()
+    lstm.build_lstm()
+    lstm.train(X_train, y_train)
+    lstm.evaluate(X_test, y_test)
