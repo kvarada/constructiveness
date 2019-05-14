@@ -7,13 +7,7 @@ import math
 
 from spacy_features import CommentLevelFeatures
 
-sys.path.append('../../')
-from config import Config
-
-sys.path.append('../modeling/')
-from data_preprocessing_and_representation_for_deep_learning import *
-
-sys.path.append(Config.PROJECT_HOME + 'source/feature_extraction/COMMENTIQ_code_subset/')
+sys.path.append('COMMENTIQ_code_subset/')
 import commentIQ_features
 
 class FeatureExtractor():
@@ -200,6 +194,8 @@ class FeatureExtractor():
         pos_seq = cf.get_pos_seq()
         return ner_count, nsentscount, anwords, pos_seq
 
+    def get_perspective_features(self, ):
+    
     def extract_crowd_annotated_features(self, char_cols = ['constructive_characteristics',
                                                  'non_constructive_characteristics',
                                                  'toxicity_characteristics'
@@ -230,7 +226,7 @@ class FeatureExtractor():
         #self.df.to_csv(output_csv, columns = cols, index = False)
         #print('Features CSV written: ', output_csv)
 
-
+        
     def extract_features(self):
         '''
         :param output_csv: String. The CSV path to write feature vectors
@@ -446,161 +442,12 @@ def extract_feats_for_old_annotated_SOCC():
     #df_merged.to_csv(Config.TRAIN_PATH + 'SOCC_old_constructiveness_annotations_feats.csv', columns = cols, index = False) 
 
 
+    
+def extract_perspective_features(corpus, 
+                     ):
+    
 if __name__ == "__main__":
-    #extract_feats_for_old_annotated_SOCC()
-    #df = pd.read_csv(Config.SOCC_ANNOTATED_CONSTRUCTIVENESS_12000)
-    #df_clean = df[(df['constructive'] < 0.4) | (df['constructive'] > 0.6)]
-    #print(df_clean.shape)
-    #fe_train = FeatureExtractor(df_clean, comment_column = 'comment_text')        
-    #fe_train.extract_features()  
-    #fe_train.extract_crowd_annotated_features()
-    #feats_df = fe_train.get_features_df()
-    #feats_df = feats_df.rename(columns={'comment_text':'pp_comment_text'})
-    #feats_df.to_csv(Config.TRAIN_PATH + 'CTC_crowd_annotated_feats.csv', index = False) 
-    crowd_feats_df = pd.read_csv(Config.TRAIN_PATH + 'CTC_crowd_annotated_feats.csv')
-    cf_df = crowd_feats_df[['comment_counter', 'pp_comment_text', 'specific_points', 
-                        'dialogue', 'evidence', 'personal_story', 'solution',
-                        'no_con', 'no_respect', 'provocative', 'sarcastic', 'non_relevant',
-                        'unsubstantial', 'no_non_con', 'personal_attack', 'teasing', 'abusive',
-                        'embarrassment', 'inflammatory', 'no_toxic']]
-    SOCC_other_feats_df = pd.read_csv(Config.ALL_SOCC_FEATURES_FILE_PATH)
-    SOCC_df = SOCC_other_feats_df[SOCC_other_feats_df['source'] == 'SOCC']
-    print(SOCC_df.columns)
-    result_df = cf_df.merge(SOCC_df, on=['comment_counter', 'pp_comment_text'], how='inner')
-    result_df.to_csv(Config.TRAIN_PATH + 'CTC_with_all_feats.csv')
-    sys.exit(0)
     
-    # Extract features for SOCC
-    df = pd.read_csv(Config.ALL_SOCC_FEATURES_FILE_PATH)
-    print(df.columns)
-    df_clean = df.drop(df[(df['constructive'] >= 0.4) & (df['constructive'] <= 0.6)].index)    
-    fe_train = FeatureExtractor(df_clean, comment_column = 'pp_comment_text')
-    fe_train.extract_features()    
-    feats_df = fe_train.get_features_df()
-    cols = ['comment_counter', 'pp_comment_text', 'constructive', 'source', 
-        'has_conjunctions_and_connectives',
-        'has_stance_adverbials', 'has_reasoning_verbs', 'has_modals', 'has_shell_nouns',
-        'length', 'average_word_length', 'readability_score', 'personal_exp_score',
-        'named_entity_count', 'nSents', 'avg_words_per_sent',             
-        'pos', 'ncaps', 'noov',         
-        'SEVERE_TOXICITY:probability', 'SEXUALLY_EXPLICIT:probability',
-        'TOXICITY:probability', 'TOXICITY_IDENTITY_HATE:probability',
-        'TOXICITY_INSULT:probability', 'TOXICITY_OBSCENE:probability',
-        'TOXICITY_THREAT:probability', 'ATTACK_ON_AUTHOR:probability',
-        'ATTACK_ON_COMMENTER:probability', 'ATTACK_ON_PUBLISHER:probability',
-        'INCOHERENT:probability', 'INFLAMMATORY:probability',
-        'LIKELY_TO_REJECT:probability', 'OBSCENE:probability',
-        'OFF_TOPIC:probability', 'SPAM:probability',
-        'UNSUBSTANTIAL:probability'
-       ]    
-    feats_df.to_csv(Config.TRAIN_PATH + 'SOCC_all_feats.csv', columns = cols, index = False)    
-    
-    sys.exit(0)
-
-    
-    # Extract features for sentences training data
-    df = pd.read_csv(Config.TRAIN_PATH + 'constructive_sentences_training_data.csv')
-    fe_train = FeatureExtractor(df, comment_column = 'sentence')
-    fe_train.extract_features()
-    features_df = fe_train.get_features_df()
-    features_df.to_csv(Config.TRAIN_PATH + 'SOCC_sents_features.csv', index = False)
-    #fe_train.write_features_csv(Config.TRAIN_PATH + 'SOCC_sents_features.csv')  
-    sys.exit(0)
-    
-    # For training only get instances where the constructiveness label is reliable 
-    df = pd.read_csv(Config.SOCC_COMMENTS_WITH_PERSPECTIVE_SCORES)
-    df_clean = df.drop(df[(df['constructive'] >= 0.4) & (df['constructive'] <= 0.6)].index)
-    print(df_clean.columns)
-    fe_train = FeatureExtractor(df_clean, comment_column = 'comment_text')
-    fe_train.extract_features()    
-    cols = ['comment_counter', 'pp_comment_text', 'constructive', 'source', 
-        'has_conjunctions_and_connectives',
-        'has_stance_adverbials', 'has_reasoning_verbs', 'has_modals', 'has_shell_nouns',
-        'length', 'average_word_length', 'readability_score', 'personal_exp_score',
-        'named_entity_count', 'nSents', 'avg_words_per_sent',             
-        'SEVERE_TOXICITY:probability', 'SEXUALLY_EXPLICIT:probability',
-        'TOXICITY:probability', 'TOXICITY_IDENTITY_HATE:probability',
-        'TOXICITY_INSULT:probability', 'TOXICITY_OBSCENE:probability',
-        'TOXICITY_THREAT:probability', 'ATTACK_ON_AUTHOR:probability',
-        'ATTACK_ON_COMMENTER:probability', 'ATTACK_ON_PUBLISHER:probability',
-        'INCOHERENT:probability', 'INFLAMMATORY:probability',
-        'LIKELY_TO_REJECT:probability', 'OBSCENE:probability',
-        'OFF_TOPIC:probability', 'SPAM:probability',
-        'UNSUBSTANTIAL:probability'
-       ]
-    
-    sys.exit(0)
-    fe_train.write_features_csv(Config.TRAIN_PATH + 'SOCC_features.csv', cols = SOCC_cols)  
-    args = get_arguments()    
-    print(args)
-    cols = ['pp_comment_text', 'constructive', 'source', 'crowd_toxicity_level', 
-            'specific_points', 'dialogue', 'no_con',
-            'evidence', 'personal_story', 'solution', 'no_respect', 'no_non_con',
-            'provocative', 'sarcastic', 'non_relevant',
-            'unsubstantial', 'personal_attack', 'teasing', 'no_toxic', 'abusive',
-            'embarrassment', 'inflammatory', 'has_conjunctions_and_connectives',
-            'has_stance_adverbials', 'has_reasoning_verbs', 'has_modals', 'has_shell_nouns',
-            'length', 'average_word_length', 'readability_score', 'personal_exp_score',
-            'named_entity_count', 'nSents', 'avg_words_per_sent',             
-            'SEVERE_TOXICITY:probability', 'SEXUALLY_EXPLICIT:probability',
-            'TOXICITY:probability', 'TOXICITY_IDENTITY_HATE:probability',
-            'TOXICITY_INSULT:probability', 'TOXICITY_OBSCENE:probability',
-            'TOXICITY_THREAT:probability', 'ATTACK_ON_AUTHOR:probability',
-            'ATTACK_ON_COMMENTER:probability', 'ATTACK_ON_PUBLISHER:probability',
-            'INCOHERENT:probability', 'INFLAMMATORY:probability',
-            'LIKELY_TO_REJECT:probability', 'OBSCENE:probability',
-            'OFF_TOPIC:probability', 'SPAM:probability',
-            'UNSUBSTANTIAL:probability'
-           ]
-    
-    #fe_train.write_features_csv(args.train_features_csv, cols)    
-    fe_train = FeatureExtractor(pd.read_csv(Config.SOCC_COMMENTS_WITH_PERSPECTIVE_SCORES), comment_column = 'comment_text')
-    fe_train.extract_features()    
-    #fe_train.extract_crowd_annotated_features()
-    
-    rename_dict = { 'comment_text':'pp_comment_text',
-                    'SEVERE_TOXICITY_probability':'SEVERE_TOXICITY:probability', 
-                    'SEXUALLY_EXPLICIT_probability':'SEXUALLY_EXPLICIT:probability',
-                    'TOXICITY_probability':'TOXICITY:probability', 
-                    'TOXICITY_IDENTITY_HATE_probability':'TOXICITY_IDENTITY_HATE:probability',
-                    'TOXICITY_INSULT_probability':'TOXICITY_INSULT:probability', 
-                    'TOXICITY_OBSCENE_probability':'TOXICITY_OBSCENE:probability',
-                    'TOXICITY_THREAT_probability':'TOXICITY_THREAT:probability', 
-                    'ATTACK_ON_AUTHOR_probability':'ATTACK_ON_AUTHOR:probability',
-                    'ATTACK_ON_COMMENTER_probability':'ATTACK_ON_COMMENTER:probability', 
-                    'ATTACK_ON_PUBLISHER_probability':'ATTACK_ON_PUBLISHER:probability',
-                    'INCOHERENT_probability':'INCOHERENT:probability',
-                    'INFLAMMATORY_probability':'INFLAMMATORY:probability',
-                    'LIKELY_TO_REJECT_probability':'LIKELY_TO_REJECT:probability',
-                    'OBSCENE_probability':'OBSCENE:probability',
-                    'OFF_TOPIC_probability':'OFF_TOPIC:probability', 
-                    'SPAM_probability':'SPAM:probability',
-                    'UNSUBSTANTIAL_probability':'UNSUBSTANTIAL:probability'
-                  }
-    fe_train.rename_column_names(rename_dict)
-    
-    SOCC_cols = ['comment_counter', 'pp_comment_text', 'constructive', 'source', 
-        'has_conjunctions_and_connectives',
-        'has_stance_adverbials', 'has_reasoning_verbs', 'has_modals', 'has_shell_nouns',
-        'length', 'average_word_length', 'readability_score', 'personal_exp_score',
-        'named_entity_count', 'nSents', 'avg_words_per_sent',             
-        'SEVERE_TOXICITY:probability', 'SEXUALLY_EXPLICIT:probability',
-        'TOXICITY:probability', 'TOXICITY_IDENTITY_HATE:probability',
-        'TOXICITY_INSULT:probability', 'TOXICITY_OBSCENE:probability',
-        'TOXICITY_THREAT:probability', 'ATTACK_ON_AUTHOR:probability',
-        'ATTACK_ON_COMMENTER:probability', 'ATTACK_ON_PUBLISHER:probability',
-        'INCOHERENT:probability', 'INFLAMMATORY:probability',
-        'LIKELY_TO_REJECT:probability', 'OBSCENE:probability',
-        'OFF_TOPIC:probability', 'SPAM:probability',
-        'UNSUBSTANTIAL:probability'
-       ]
-        
-    fe_train.write_features_csv(Config.TRAIN_PATH + 'SOCC_features.csv', cols = SOCC_cols)
-    #nyt_ync_df = fe_train.get_features_df()
-    #print('columns: ', nyt_ync_df.columns)
-    
-     #fe_test = FeatureExtractor(args.test_data_path)
-    #fe_test.extract_features(args.test_features_csv)
 
 
 
