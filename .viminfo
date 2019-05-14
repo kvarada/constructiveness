@@ -8,16 +8,18 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/mode
+~MSle0~/.python_history
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
 :wq
+:w
 :q!
 
 # Search String History (newest to oldest):
+?/.python_history
 ?/mode
 ?/model
 ? @$
@@ -31,132 +33,162 @@ $
 # Input Line History (newest to oldest):
 
 # Registers:
-""0	CHAR	0
-	e
+"0	LINE	0
+	export MODALS=${LEXICONS}/modals.txt
+""1	LINE	0
+	
+"2	LINE	0
+	# a comment and that will be ignored.
+"3	LINE	0
+	
 "-	CHAR	0
-	e
+	t
 
 # File marks:
-'0  82  6  ~/.gitignore
-'1  79  5  ~/.gitignore
-'2  1  0  ~/models/.gitkeep
-'3  8  0  ~/models
-'4  2  0  /home/vkolhatk/.gitconfig
-'5  81  45  ~/.gitignore
-'6  61  0  ~/.gitignore
-'7  6  33  ~/.env
+'0  26  7  ~/.gitignore
+'1  1  5  ~/.env
+'2  20  57  ~/.env
+'3  84  6  ~/.gitignore
+'4  81  5  ~/.gitignore
+'5  1  0  ~/models/.gitkeep
+'6  8  0  ~/models
+'7  2  0  /home/vkolhatk/.gitconfig
+'8  83  45  ~/.gitignore
+'9  63  0  ~/.gitignore
 
 # Jumplist (newest first):
--'  82  6  ~/.gitignore
+-'  26  7  ~/.gitignore
 -'  1  0  ~/.gitignore
--'  79  5  ~/.gitignore
+-'  1  5  ~/.env
+-'  20  57  ~/.env
+-'  84  6  ~/.gitignore
+-'  81  5  ~/.gitignore
 -'  1  0  ~/models/.gitkeep
 -'  8  0  ~/models
 -'  2  0  /home/vkolhatk/.gitconfig
 -'  1  0  /home/vkolhatk/.gitconfig
--'  81  45  ~/.gitignore
+-'  83  45  ~/.gitignore
 -'  2  0  ~/.gitignore
--'  61  0  ~/.gitignore
--'  6  33  ~/.env
--'  1  0  ~/.env
--'  6  33  ~/.env
--'  1  0  ~/.env
--'  6  33  ~/.env
--'  1  0  ~/.env
--'  6  33  ~/.env
--'  1  0  ~/.env
--'  6  33  ~/.env
--'  1  0  ~/.env
--'  6  33  ~/.env
--'  1  0  ~/.env
--'  6  33  ~/.env
--'  1  0  ~/.env
--'  6  33  ~/.env
--'  1  0  ~/.env
+-'  63  0  ~/.gitignore
+-'  8  33  ~/.env
 -'  2  0  /home/vkolhatk/.gitconfig
 -'  1  0  /home/vkolhatk/.gitconfig
--'  6  33  ~/.env
--'  1  0  ~/.env
--'  6  33  ~/.env
--'  1  0  ~/.env
--'  6  33  ~/.env
--'  1  0  ~/.env
--'  6  33  ~/.env
--'  1  0  ~/.env
--'  6  33  ~/.env
--'  1  0  ~/.env
--'  6  33  ~/.env
--'  1  0  ~/.env
--'  6  33  ~/.env
--'  1  0  ~/.env
--'  6  33  ~/.env
--'  1  0  ~/.env
 -'  8  0  ~/models
 -'  2  0  /home/vkolhatk/.gitconfig
 -'  1  0  /home/vkolhatk/.gitconfig
--'  6  33  ~/.env
--'  1  0  ~/.env
--'  6  33  ~/.env
--'  1  0  ~/.env
--'  6  33  ~/.env
--'  1  0  ~/.env
--'  6  33  ~/.env
--'  1  0  ~/.env
--'  6  33  ~/.env
--'  1  0  ~/.env
--'  6  33  ~/.env
--'  1  0  ~/.env
--'  6  33  ~/.env
--'  1  0  ~/.env
--'  6  33  ~/.env
--'  1  0  ~/.env
 -'  2  0  /home/vkolhatk/.gitconfig
 -'  1  0  /home/vkolhatk/.gitconfig
--'  6  33  ~/.env
--'  1  0  ~/.env
--'  6  33  ~/.env
--'  1  0  ~/.env
--'  6  33  ~/.env
--'  1  0  ~/.env
--'  6  33  ~/.env
--'  1  0  ~/.env
 -'  1  0  ~/models/.gitkeep
 -'  8  0  ~/models
 -'  2  0  /home/vkolhatk/.gitconfig
 -'  1  0  /home/vkolhatk/.gitconfig
--'  6  33  ~/.env
--'  1  0  ~/.env
--'  6  33  ~/.env
--'  1  0  ~/.env
--'  6  33  ~/.env
--'  1  0  ~/.env
--'  6  33  ~/.env
--'  1  0  ~/.env
--'  6  33  ~/.env
--'  1  0  ~/.env
--'  6  33  ~/.env
--'  1  0  ~/.env
--'  6  33  ~/.env
--'  1  0  ~/.env
--'  6  33  ~/.env
+-'  1  0  ~/models/.gitkeep
+-'  8  0  ~/models
+-'  1  0  ~/models/.gitkeep
+-'  8  0  ~/models
+-'  2  0  /home/vkolhatk/.gitconfig
+-'  1  0  /home/vkolhatk/.gitconfig
+-'  2  0  /home/vkolhatk/.gitconfig
+-'  1  0  /home/vkolhatk/.gitconfig
+-'  8  0  ~/models
+-'  2  0  /home/vkolhatk/.gitconfig
+-'  1  0  /home/vkolhatk/.gitconfig
+-'  2  0  /home/vkolhatk/.gitconfig
+-'  1  0  /home/vkolhatk/.gitconfig
+-'  1  0  ~/models/.gitkeep
+-'  8  0  ~/models
+-'  2  0  /home/vkolhatk/.gitconfig
+-'  1  0  /home/vkolhatk/.gitconfig
+-'  1  0  ~/models/.gitkeep
+-'  8  0  ~/models
+-'  1  5  ~/.env
+-'  20  57  ~/.env
+-'  80  5  ~/.gitignore
+-'  1  0  ~/models/.gitkeep
+-'  8  0  ~/models
+-'  2  0  /home/vkolhatk/.gitconfig
+-'  1  0  /home/vkolhatk/.gitconfig
+-'  82  45  ~/.gitignore
+-'  62  0  ~/.gitignore
+-'  8  33  ~/.env
+-'  2  0  /home/vkolhatk/.gitconfig
+-'  1  0  /home/vkolhatk/.gitconfig
+-'  8  0  ~/models
+-'  2  0  /home/vkolhatk/.gitconfig
+-'  1  0  /home/vkolhatk/.gitconfig
+-'  2  0  /home/vkolhatk/.gitconfig
+-'  1  0  /home/vkolhatk/.gitconfig
+-'  1  0  ~/models/.gitkeep
+-'  8  0  ~/models
+-'  2  0  /home/vkolhatk/.gitconfig
+-'  1  0  /home/vkolhatk/.gitconfig
+-'  1  0  ~/models/.gitkeep
+-'  8  0  ~/models
+-'  1  0  ~/models/.gitkeep
+-'  8  0  ~/models
+-'  2  0  /home/vkolhatk/.gitconfig
+-'  1  0  /home/vkolhatk/.gitconfig
+-'  2  0  /home/vkolhatk/.gitconfig
+-'  1  0  /home/vkolhatk/.gitconfig
+-'  8  0  ~/models
+-'  1  5  ~/.env
+-'  20  57  ~/.env
+-'  1  0  ~/models/.gitkeep
+-'  8  0  ~/models
+-'  2  0  /home/vkolhatk/.gitconfig
+-'  1  0  /home/vkolhatk/.gitconfig
+-'  8  33  ~/.env
+-'  2  0  /home/vkolhatk/.gitconfig
+-'  1  0  /home/vkolhatk/.gitconfig
+-'  8  0  ~/models
+-'  2  0  /home/vkolhatk/.gitconfig
+-'  1  0  /home/vkolhatk/.gitconfig
+-'  2  0  /home/vkolhatk/.gitconfig
+-'  1  0  /home/vkolhatk/.gitconfig
+-'  1  0  ~/models/.gitkeep
+-'  8  0  ~/models
 
 # History of marks within files (newest to oldest):
 
 > ~/.gitignore
-	"	82	6
-	^	82	7
-	.	82	6
-	+	81	21
-	+	82	7
-	+	82	6
+	"	26	7
+	^	26	8
+	.	26	0
+	+	83	21
+	+	84	7
+	+	84	6
+	+	25	15
+	+	26	0
+
+> ~/.env
+	"	1	5
+	^	1	6
+	.	1	5
+	+	8	33
+	+	6	9
+	+	10	59
+	+	12	24
+	+	14	26
+	+	13	43
+	+	14	46
+	+	15	36
+	+	19	0
+	+	16	0
+	+	17	0
+	+	18	0
+	+	19	0
+	+	16	14
+	+	17	7
+	+	18	7
+	+	17	35
+	+	18	48
+	+	19	0
+	+	19	46
+	+	20	37
+	+	1	5
 
 > ~/models/.gitkeep
 	"	1	0
 
 > /home/vkolhatk/.gitconfig
 	"	2	0
-
-> ~/.env
-	"	6	33
-	.	6	33
-	+	6	33
