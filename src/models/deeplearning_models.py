@@ -47,6 +47,7 @@ class DLTextClassifier():
         self.tokenizer = Tokenizer(num_words=self.max_features, 
                              filters='! #$% ()*+,-./:; = ?@[\\]^_`{|}~\t\n>"<')                        
           
+            
     def prepare_data(self, corpus, mode = 'train'):
         """
         Given a corpus and the mode, prepare data for the deep learning model.
@@ -96,6 +97,7 @@ class DLTextClassifier():
         print('Padded data shape:', padded_data.shape)
         return padded_data    
       
+        
     def build_lstm(self):
         """        
         Build an LSTM model self.model using Keras and and print 
@@ -208,6 +210,7 @@ class DLTextClassifier():
         score, acc = self.model.evaluate(X_test_padded, y_test)
         print('Accuracy: ', acc)
 
+        
     def predict(self, texts):
         """
         Predict the labels of the given texts using self.model. 
@@ -222,18 +225,54 @@ class DLTextClassifier():
         
         """
         padded_sequences = self.prepare_data(texts, mode = 'test')
-        return self.model.predict(padded_sequences)
+        return self.model.predict(padded_sequences)    
+       
     
-
+def run_dl_experiment(X_train, y_train, X_test, y_test, 
+                      model = 'lstm'):
+    """
+    """    
+    
+    dlclf = DLTextClassifier()
+    if model.endswith('lstm'):
+        dlclf.build_lstm
+        
+    elif model.endswith('cnn'): 
+        dlclf.build_cnn()
+        
+    dlclf.train(X_train, y_train)
+    print('\n Train accuracy: \n\n')
+    dlclf.evaluate(X_train, y_train)
+    
+    print('\n Test accuracy: \n\n')
+    dlclf.evaluate(X_test, y_test)
+       
+    
 if __name__=="__main__":    
-    df = pd.read_csv(os.environ['PREPROCESSED'])
-    df['constructive_binary'] = df['constructive'].apply(lambda x: 1.0 if x > 0.5 else 0.0)
-    X_train, X_test, y_train, y_test = train_test_split(df['pp_comment_text'], 
-                                                        df['constructive_binary'], 
-                                                        test_size=0.2, 
-                                                        random_state=42)        
+    
+    # Run DL experiments on C3
+    C3_train_df = pd.read_csv(os.environ['C3_TRAIN'])
+    C3_test_df = pd.read_csv(os.environ['C3_TEST'])    
+    
+    X_train = C3_train_df['comment_text']
+    y_train = C3_train_df['constructive_binary']
+    
+    X_test = C3_test_df['comment_text']
+    y_test = C3_test_df['constructive_binary']
+    print('CNN experiment on the C3 test set:')
+    run_dl_experiment(X_train, y_train, X_test, y_test, model='cnn')
+    
+    # Run DL experiments on length-balanced C3
+   
+    C3_train_df = pd.read_csv(os.environ['C3_MINUS_LB'])
+    C3_test_df = pd.read_csv(os.environ['C3_LB'])    
+    
+    X_train = C3_train_df['comment_text']
+    y_train = C3_train_df['constructive_binary']
+    
+    X_test = C3_test_df['comment_text']
+    y_test = C3_test_df['constructive_binary']
 
-    lstm = DLTextClassifier()
-    lstm.build_lstm()
-    lstm.train(X_train, y_train)
-    lstm.evaluate(X_test, y_test)
+    print('CNN experiment on the length-balanced test set: ')
+    run_dl_experiment(X_train, y_train, X_test, y_test, model='cnn')
+    
