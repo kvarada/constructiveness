@@ -11,17 +11,20 @@ import tensorflow
 from keras.preprocessing import sequence
 from keras.models import Sequential, Model
 from keras.layers import Dense, Input, LSTM, Embedding, Dropout, Activation, GRU
-from keras.layers import Conv1D,Bidirectional, GlobalMaxPool1D, GlobalMaxPooling1D
+from keras.layers import Conv1D,Bidirectional, GlobalMaxPool1D, GlobalMaxPooling1D, MaxPooling1D
 from keras.datasets import imdb
 from keras.preprocessing.text import Tokenizer
 from sklearn.model_selection import train_test_split
+from keras import regularizers
+from keras.layers import Concatenate
 
+import pickle, string
 
 class DLTextClassifier():
-    def __init__(self, 
-                 embedding_dimension = 200,
-                 max_features = 20000, 
-                 maxlen = 80):
+    def __init__(self, X_train, y_train,  
+                 embedding_dimension = 300,
+                 max_features = 50000, 
+                 maxlen = 100):
         """
         Instantiate the DLTextClassifer.
         
@@ -44,10 +47,52 @@ class DLTextClassifier():
         self.kernel_size = 3
         self.hidden_dims = 250
         # create the tokenizer        
-        self.tokenizer = Tokenizer(num_words=self.max_features, 
-                             filters='! #$% ()*+,-./:; = ?@[\\]^_`{|}~\t\n>"<')                        
-          
-            
+        self.tokenizer = Tokenizer(num_words=self.max_features)                        
+        self.glove_embeddings_dict = defaultdict()        
+        #self.read_glove_embeddings()
+        #pickle_out = open('../../data/interim/glove_embeddings_dict.pkl',"wb")
+        #pickle.dump(self.glove_embeddings_dict, pickle_out) 
+        #pickle_out.close()
+        pickled_data = open('../../data/interim/glove_embeddings_dict.pkl',"rb")
+        self.glove_embeddings_dict = pickle.load(pickled_data)
+        self.X_train_padded = self.prepare_data(X_train)
+        self.embedding_matrix = self.create_embedding_matrix()  
+
+    def read_glove_embeddings(self):
+        """
+        """
+        gf = open(os.environ['GLOVE_EMBEDDINGS_PATH'], 'r')            
+        for line in gf:
+            values = line.split()
+            word = " ".join(values[0:-self.embedding_dimension])
+            try: 
+                embedding = np.asarray(values[-self.embedding_dimension:], dtype='float32')                        
+                self.glove_embeddings_dict[word] = embedding
+            except:
+                print(values)
+                sys.exit(0)
+
+    def create_embedding_matrix(self):
+        """
+        """
+        not_found = 0 
+        self.vocab_size = len(self.word_index) + 1 
+        embedding_matrix = np.zeros((self.vocab_size, self.embedding_dimension))
+
+        for word, i in self.word_index.items():
+            if word in self.glove_embeddings_dict:
+              # words not found in embedding index will be all-zeros.
+               embedding_matrix[i] = self.glove_embeddings_dict[word]
+            else:
+               print('Not found: ', word)
+               not_found += 1
+
+        print('Number of words not found in glove embeddings: ', not_found)
+        nonzero_elements = np.count_nonzero(np.count_nonzero(embedding_matrix, axis=1))
+        print('Percentage non-zero elements: ', nonzero_elements / self.vocab_size)
+        return embedding_matrix
+    
+    
     def prepare_data(self, corpus, mode = 'train'):
         """
         Given a corpus and the mode, prepare data for the deep learning model.
@@ -96,8 +141,8 @@ class DLTextClassifier():
         padded_data = sequence.pad_sequences(data, maxlen=self.maxlen)
         print('Padded data shape:', padded_data.shape)
         return padded_data    
-      
-        
+         
+
     def build_lstm(self):
         """        
         Build an LSTM model self.model using Keras and and print 
@@ -107,11 +152,16 @@ class DLTextClassifier():
         --------------
         None        
         
-        """
-        
+        """        
         print('Building model...')
-        self.model = Sequential()                               
-        self.model.add(Embedding(self.max_features, self.embedding_dimension))
+        self.model = Sequential()    
+        embedding_layer = Embedding(len(self.word_index) + 1,
+                                    self.embedding_dimension,
+                                    weights=[self.embedding_matrix],
+                                    input_length=self.maxlen,
+                                    trainable=False)
+        self.model.add(embedding_layer)        
+        #self.model.add(Embedding(self.max_features, self.embedding_dimension))
         self.model.add(LSTM(128, dropout=0.2, recurrent_dropout=0.2))
         self.model.add(Dense(1, activation='sigmoid'))
         # try using different optimizers and different optimizer configs
@@ -120,7 +170,8 @@ class DLTextClassifier():
                       metrics=['accuracy'])
         
         print(self.model.summary())
-                
+
+        
 
     def build_cnn(self):
         """        
@@ -131,18 +182,43 @@ class DLTextClassifier():
         --------------
         None        
         
-        """        
-        print('Building CNN model...')
-        self.model = Sequential()                                              
-        self.model.add(Embedding(self.max_features, self.embedding_dimension))        
-        self.model.add(Dropout(0.2))
+        """
+        print('Building CNN model...')  
+        
+        self.model = Sequential()
+        self.model.add(Embedding(self.vocab_size, 
+                                        self.embedding_dimension, 
+                                        weights=[self.embedding_matrix], 
+                                        input_length=self.maxlen, 
+                                        trainable=True))        
+        
+        #self.model.add(embedding_layer)        
+        #self.model.add(Embedding(self.max_features, self.embedding_dimension))
+        self.model.add(Dropout(0.5))
         # we add a Convolution1D, which will learn filters
         # word group filters of size filter_length:
         self.model.add(Conv1D(self.filters,
                              self.kernel_size,
                              padding='valid',
                              activation='relu',
-                             strides=1))
+                             strides=1,
+                             kernel_regularizer=regularizers.l2(0.01)))
+        self.model.add(MaxPooling1D())
+        self.model.add(Conv1D(self.filters,
+                             self.kernel_size,
+                             padding='valid',
+                             activation='relu',
+                             strides=1,
+                             kernel_regularizer=regularizers.l2(0.01)))
+        self.model.add(MaxPooling1D())
+        self.model.add(Conv1D(self.filters,
+                             self.kernel_size,
+                             padding='valid',
+                             activation='relu',
+                             strides=1,
+                             kernel_regularizer=regularizers.l2(0.01)))
+
+        
         # we use max pooling:
         self.model.add(GlobalMaxPooling1D())
 
@@ -164,7 +240,7 @@ class DLTextClassifier():
     def train(self, 
               X_train, y_train,
               batch_size =32, 
-              epochs = 5, 
+              epochs = 5,
               save_path='../../models/my_model.h5'):
         """
         Given the parameters train a deep learning model and save and return it.  
@@ -183,10 +259,10 @@ class DLTextClassifier():
         """        
 
         print('Training...')        
-        X_train_padded = self.prepare_data(X_train)        
-        self.model.fit(X_train_padded, y_train,
+        
+        self.model.fit(self.X_train_padded, y_train,
                        batch_size=batch_size,
-                       validation_split = 0.1,     
+                       validation_split = 0.1,
                        epochs=epochs)
         self.model.save(save_path) 
         return self.model
@@ -229,13 +305,14 @@ class DLTextClassifier():
        
     
 def run_dl_experiment(X_train, y_train, X_test, y_test, 
-                      model = 'lstm'):
+                      model = 'cnn'):
     """
     """    
     
-    dlclf = DLTextClassifier()
+    dlclf = DLTextClassifier(X_train, y_train)
+    
     if model.endswith('lstm'):
-        dlclf.build_lstm
+        dlclf.build_lstm()
         
     elif model.endswith('cnn'): 
         dlclf.build_cnn()
@@ -249,7 +326,29 @@ def run_dl_experiment(X_train, y_train, X_test, y_test,
        
     
 if __name__=="__main__":    
+
+    # Run DL experiments on length-balanced C3
+   
+    #C3_train_df = pd.read_csv(os.environ['C3_MINUS_LB'])
+    #C3_test_df = pd.read_csv(os.environ['C3_LB'])
+    C3_train_df = pd.read_csv(os.environ['C3_TRAIN'])
+    C3_test_df = pd.read_csv(os.environ['C3_TEST'])    
+
+    C3_train_df['pp_comment_text'] = C3_train_df['comment_text'].apply(lambda x: x.translate(str.maketrans('', '', string.punctuation)))
+
+    C3_test_df['pp_comment_text'] = C3_test_df['comment_text'].apply(lambda x: x.translate(str.maketrans('', '', string.punctuation)))
+
+       
+    X_train = C3_train_df['pp_comment_text']
+    y_train = C3_train_df['constructive_binary']
     
+    X_test = C3_test_df['pp_comment_text']
+    y_test = C3_test_df['constructive_binary']
+
+    print('CNN experiment on the length-balanced test set: ')
+    run_dl_experiment(X_train, y_train, X_test, y_test, model='cnn')
+
+    sys.exit(0)    
     # Run DL experiments on C3
     C3_train_df = pd.read_csv(os.environ['C3_TRAIN'])
     C3_test_df = pd.read_csv(os.environ['C3_TEST'])    
@@ -262,17 +361,4 @@ if __name__=="__main__":
     print('CNN experiment on the C3 test set:')
     run_dl_experiment(X_train, y_train, X_test, y_test, model='cnn')
     
-    # Run DL experiments on length-balanced C3
-   
-    C3_train_df = pd.read_csv(os.environ['C3_MINUS_LB'])
-    C3_test_df = pd.read_csv(os.environ['C3_LB'])    
-    
-    X_train = C3_train_df['comment_text']
-    y_train = C3_train_df['constructive_binary']
-    
-    X_test = C3_test_df['comment_text']
-    y_test = C3_test_df['constructive_binary']
-
-    print('CNN experiment on the length-balanced test set: ')
-    run_dl_experiment(X_train, y_train, X_test, y_test, model='cnn')
     
