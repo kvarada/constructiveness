@@ -20,8 +20,8 @@ class Preprocessor:
         """
         """    
         # Remove urls
-        text = re.sub(r'^https?:\/\/.*[\r\n]*', '', text, flags=re.MULTILINE)    
-        text = re.sub(r'www..*\/\/.*', '', text, flags=re.MULTILINE)            
+        text = re.sub(r'http\S+', '', text)
+        text = re.sub(r'www\S+', '', text)
         tokens = nltk.word_tokenize(text)
         preprocessed = []
         
