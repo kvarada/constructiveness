@@ -56,8 +56,8 @@ class DLTextClassifier():
         pickled_data = open('../../data/interim/glove_embeddings_dict.pkl',"rb")
         self.glove_embeddings_dict = pickle.load(pickled_data)
         self.X_train_padded = self.prepare_data(X_train)
-        self.embedding_matrix = self.create_embedding_matrix()  
-
+        self.embedding_matrix = self.create_embedding_matrix()
+        
     def read_glove_embeddings(self):
         """
         """
@@ -324,25 +324,20 @@ def run_dl_experiment(X_train, y_train, X_test, y_test,
     print('\n Test accuracy: \n\n')
     dlclf.evaluate(X_test, y_test)
        
-    
+        
 if __name__=="__main__":    
 
     # Run DL experiments on length-balanced C3
    
-    #C3_train_df = pd.read_csv(os.environ['C3_MINUS_LB'])
-    #C3_test_df = pd.read_csv(os.environ['C3_LB'])
-    C3_train_df = pd.read_csv(os.environ['C3_TRAIN'])
-    C3_test_df = pd.read_csv(os.environ['C3_TEST'])    
-
-    C3_train_df['pp_comment_text'] = C3_train_df['comment_text'].apply(lambda x: x.translate(str.maketrans('', '', string.punctuation)))
-
-    C3_test_df['pp_comment_text'] = C3_test_df['comment_text'].apply(lambda x: x.translate(str.maketrans('', '', string.punctuation)))
-
+    C3_train_df = pd.read_csv(os.environ['C3_MINUS_LB'])
+    C3_test_df = pd.read_csv(os.environ['C3_LB'])
+    #C3_train_df = pd.read_csv(os.environ['C3_TRAIN'])
+    #C3_test_df = pd.read_csv(os.environ['C3_TEST'])    
        
-    X_train = C3_train_df['pp_comment_text']
+    X_train = C3_train_df['pp_comment_text'].astype(str)
     y_train = C3_train_df['constructive_binary']
     
-    X_test = C3_test_df['pp_comment_text']
+    X_test = C3_test_df['pp_comment_text'].astype(str)
     y_test = C3_test_df['constructive_binary']
 
     print('CNN experiment on the length-balanced test set: ')
@@ -353,10 +348,10 @@ if __name__=="__main__":
     C3_train_df = pd.read_csv(os.environ['C3_TRAIN'])
     C3_test_df = pd.read_csv(os.environ['C3_TEST'])    
     
-    X_train = C3_train_df['comment_text']
+    X_train = C3_train_df['pp_comment_text']
     y_train = C3_train_df['constructive_binary']
     
-    X_test = C3_test_df['comment_text']
+    X_test = C3_test_df['pp_comment_text']
     y_test = C3_test_df['constructive_binary']
     print('CNN experiment on the C3 test set:')
     run_dl_experiment(X_train, y_train, X_test, y_test, model='cnn')
