@@ -17,6 +17,13 @@ from keras.preprocessing.text import Tokenizer
 from sklearn.model_selection import train_test_split
 from keras import regularizers
 from keras.layers import Concatenate
+from keras import metrics
+from sklearn.metrics import f1_score
+
+import keras.backend as K
+
+def mean_pred(y_true, y_pred):
+    return K.mean(y_pred)
 
 import pickle, string
 
@@ -53,7 +60,7 @@ class DLTextClassifier():
         #pickle_out = open('../../data/interim/glove_embeddings_dict.pkl',"wb")
         #pickle.dump(self.glove_embeddings_dict, pickle_out) 
         #pickle_out.close()
-        pickled_data = open('../../data/interim/glove_embeddings_dict.pkl',"rb")
+        pickled_data = open('/home/vkolhatk/dev/constructiveness/data/interim/glove_embeddings_dict.pkl',"rb")
         self.glove_embeddings_dict = pickle.load(pickled_data)
         self.X_train_padded = self.prepare_data(X_train)
         self.embedding_matrix = self.create_embedding_matrix()
@@ -84,7 +91,7 @@ class DLTextClassifier():
               # words not found in embedding index will be all-zeros.
                embedding_matrix[i] = self.glove_embeddings_dict[word]
             else:
-               print('Not found: ', word)
+               #print('Not found: ', word)
                not_found += 1
 
         print('Number of words not found in glove embeddings: ', not_found)
@@ -143,7 +150,7 @@ class DLTextClassifier():
         return padded_data    
          
 
-    def build_lstm(self):
+    def build_bilstm(self):
         """        
         Build an LSTM model self.model using Keras and and print 
         the summary of the model. 
@@ -162,7 +169,8 @@ class DLTextClassifier():
                                     trainable=False)
         self.model.add(embedding_layer)        
         #self.model.add(Embedding(self.max_features, self.embedding_dimension))
-        self.model.add(LSTM(128, dropout=0.2, recurrent_dropout=0.2))
+        self.model.add(Bidirectional(LSTM(128, dropout=0.2, recurrent_dropout=0.2)))
+        self.model.add(Dropout(0.5))
         self.model.add(Dense(1, activation='sigmoid'))
         # try using different optimizers and different optimizer configs
         self.model.compile(loss='binary_crossentropy',
@@ -187,13 +195,11 @@ class DLTextClassifier():
         
         self.model = Sequential()
         self.model.add(Embedding(self.vocab_size, 
-                                        self.embedding_dimension, 
-                                        weights=[self.embedding_matrix], 
-                                        input_length=self.maxlen, 
-                                        trainable=True))        
+                                self.embedding_dimension, 
+                                weights=[self.embedding_matrix], 
+                                input_length=self.maxlen, 
+                                trainable=True))        
         
-        #self.model.add(embedding_layer)        
-        #self.model.add(Embedding(self.max_features, self.embedding_dimension))
         self.model.add(Dropout(0.5))
         # we add a Convolution1D, which will learn filters
         # word group filters of size filter_length:
@@ -241,7 +247,7 @@ class DLTextClassifier():
               X_train, y_train,
               batch_size =32, 
               epochs = 5,
-              save_path='../../models/my_model.h5'):
+              save_path = os.environ['HOME'] + '/models/my_model.h5'):
         """
         Given the parameters train a deep learning model and save and return it.  
         
@@ -278,20 +284,39 @@ class DLTextClassifier():
         y_test -- (list) the y values (a list of labels)
         
         """
-        
-        X_test_padded = self.prepare_data(X_test, mode='test')        
-        score, acc = self.model.evaluate(X_test_padded, y_test)
-        print('Accuracy: ', acc)
-        X_test_padded = self.prepare_data(X_test, mode='test')        
-        score, acc = self.model.evaluate(X_test_padded, y_test)
-        print('Accuracy: ', acc)
+        X_test_padded = self.prepare_data(X_test, mode='test')
+        predictions = self.model.predict_classes(X_test_padded)    
+        print('sklearn micro-F1-Score:', f1_score(y_test, predictions, average='micro'))
+        #score, acc = self.model.evaluate(X_test_padded, y_test)        
+        #print('mae: ', mae)
+        #print('acc: ', acc)        
 
+    def write_model_scores_df(self, C3_test_df, 
+                              results_csv_path = os.environ['HOME'] + 'models/CNN_C3_test_predictions1.csv'):
+        """
+        Write the model scores as a CSV in the provided X_test and y_test. 
         
+        Keyword arguments:
+        --------------
+        X_test -- (list) the X values (encoded and padded list documents)
+        y_test -- (list) the y values (a list of labels)
+        
+        """
+        
+        results_df = C3_test_df
+        X_test_padded = self.prepare_data(results_df['pp_comment_text'].astype(str), mode='test')        
+        results_df['prediction'] = self.model.predict_classes(X_test_padded)    
+        results_df['prediction proba'] = self.model.predict(X_test_padded)
+        results_df['comment_len'] = results_df['pp_comment_text'].apply(lambda x: len(str(x).split()))
+        results_df.to_csv(results_csv_path, index = False)
+        print('Predictions file written: ', results_csv_path)
+
+                
     def predict(self, texts):
         """
         Predict the labels of the given texts using self.model. 
         
-        Keyword arguments:
+        Arguments:
         --------------
         texts -- (list) a list of texts for prediction. 
         
@@ -301,18 +326,26 @@ class DLTextClassifier():
         
         """
         padded_sequences = self.prepare_data(texts, mode = 'test')
-        return self.model.predict(padded_sequences)    
+        self.model.predict(padded_sequences)    
        
     
-def run_dl_experiment(X_train, y_train, X_test, y_test, 
+def run_dl_experiment(C3_train_df, 
+                      C3_test_df, 
                       model = 'cnn'):
-    """
+
+
     """    
+    """    
+    X_train = C3_train_df['pp_comment_text'].astype(str)
+    y_train = C3_train_df['constructive_binary']
+    
+    X_test = C3_test_df['pp_comment_text'].astype(str)
+    y_test = C3_test_df['constructive_binary']
     
     dlclf = DLTextClassifier(X_train, y_train)
     
     if model.endswith('lstm'):
-        dlclf.build_lstm()
+        dlclf.build_bilstm()
         
     elif model.endswith('cnn'): 
         dlclf.build_cnn()
@@ -323,26 +356,26 @@ def run_dl_experiment(X_train, y_train, X_test, y_test,
     
     print('\n Test accuracy: \n\n')
     dlclf.evaluate(X_test, y_test)
+    results_df = dlclf.write_model_scores_df(C3_test_df)
        
         
 if __name__=="__main__":    
 
     # Run DL experiments on length-balanced C3
    
-    C3_train_df = pd.read_csv(os.environ['C3_MINUS_LB'])
-    C3_test_df = pd.read_csv(os.environ['C3_LB'])
-    #C3_train_df = pd.read_csv(os.environ['C3_TRAIN'])
-    #C3_test_df = pd.read_csv(os.environ['C3_TEST'])    
+    #C3_train_df = pd.read_csv(os.environ['C3_MINUS_LB'])
+    #C3_test_df = pd.read_csv(os.environ['C3_LB'])
+    C3_train_df = pd.read_csv(os.environ['C3_TRAIN'])
+    C3_test_df = pd.read_csv(os.environ['C3_TEST'])    
        
-    X_train = C3_train_df['pp_comment_text'].astype(str)
-    y_train = C3_train_df['constructive_binary']
+    #X_train = C3_train_df['pp_comment_text'].astype(str)
+    #y_train = C3_train_df['constructive_binary']
     
-    X_test = C3_test_df['pp_comment_text'].astype(str)
-    y_test = C3_test_df['constructive_binary']
-
-    print('CNN experiment on the length-balanced test set: ')
-    run_dl_experiment(X_train, y_train, X_test, y_test, model='cnn')
-
+    #X_test = C3_test_df['pp_comment_text'].astype(str)
+    #y_test = C3_test_df['constructive_binary']
+    #print('CNN experiment on the length-balanced test set: ')
+    run_dl_experiment(C3_train_df, C3_test_df, model = 'cnn')
+    
     sys.exit(0)    
     # Run DL experiments on C3
     C3_train_df = pd.read_csv(os.environ['C3_TRAIN'])
