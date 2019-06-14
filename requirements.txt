@@ -2,9 +2,15 @@
 -e .
 
 # external requirements
-click
-Sphinx
-coverage
 awscli
+click
+coverage
 flake8
+keras
+matplotlib
+nltk
+pandas
 python-dotenv>=0.5.1
+sklearn
+Sphinx
+tensorflow
