@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 import tensorflow
 from keras.preprocessing import sequence
 from keras.models import Sequential, Model
-from keras.layers import Dense, Input, LSTM, Embedding, Dropout, Activation, GRU
+from keras.layers import Dense, Input, LSTM, Embedding, Dropout, Activation, GRU, Flatten
 from keras.layers import Conv1D,Bidirectional, GlobalMaxPool1D, GlobalMaxPooling1D, MaxPooling1D
 from keras.datasets import imdb
 from keras.preprocessing.text import Tokenizer
@@ -181,6 +181,8 @@ class DLTextClassifier():
 
         
 
+        
+        
     def build_cnn(self):
         """        
         Build an LSTM model self.model using Keras and and print 
@@ -193,6 +195,7 @@ class DLTextClassifier():
         """
         print('Building CNN model...')  
         
+        '''
         self.model = Sequential()
         self.model.add(Embedding(self.vocab_size, 
                                 self.embedding_dimension, 
@@ -200,9 +203,10 @@ class DLTextClassifier():
                                 input_length=self.maxlen, 
                                 trainable=True))        
         
-        self.model.add(Dropout(0.5))
+        #self.model.add(Dropout(0.5))
         # we add a Convolution1D, which will learn filters
         # word group filters of size filter_length:
+        
         self.model.add(Conv1D(self.filters,
                              self.kernel_size,
                              padding='valid',
@@ -239,7 +243,36 @@ class DLTextClassifier():
 
         self.model.compile(loss='binary_crossentropy',
                            optimizer='adam',
+                          metrics=['accuracy'])        
+        '''        
+        sequence_input = Input(shape=(self.maxlen,), dtype='int32')
+        embedding_layer = Embedding(self.vocab_size, 
+                                    self.embedding_dimension, 
+                                    weights=[self.embedding_matrix], 
+                                    input_length=self.maxlen, 
+                                    trainable=True)
+        x = embedding_layer(sequence_input)
+        x = Conv1D(128, 2, activation='relu', padding='same')(x)
+        x = MaxPooling1D(5, padding='same')(x)
+        x = Conv1D(128, 3, activation='relu', padding='same')(x)
+        x = MaxPooling1D(5, padding='same')(x)
+        x = Conv1D(128, 4, activation='relu', padding='same')(x)
+        x = MaxPooling1D(40, padding='same')(x)
+        x = Flatten()(x)
+        x = Dropout(0.5)(x)
+        x = Dense(128, activation='relu')(x)
+        preds = Dense(1, activation='softmax')(x)
+        #return sequence_input, preds
+        # Compile model.
+
+        self.model = Model(sequence_input, preds)
+        self.model.compile(loss='binary_crossentropy',
+                           optimizer='adam',
                            metrics=['accuracy'])        
+        #self.model.compile(loss='categorical_crossentropy',
+        #              optimizer=RMSprop(lr=LEARNING_RATE),
+        #              metrics=['acc'])
+        
         print(self.model.summary())
         
         
@@ -284,15 +317,17 @@ class DLTextClassifier():
         y_test -- (list) the y values (a list of labels)
         
         """
-        X_test_padded = self.prepare_data(X_test, mode='test')
-        predictions = self.model.predict_classes(X_test_padded)    
+        X_test_padded = self.prepare_data(X_test, mode='test')        
+        #predictions = self.model.predict_classes(X_test_padded)    
+        predictions = self.model.predict(X_test_padded)    
+        print(predictions[:100])
         print('sklearn micro-F1-Score:', f1_score(y_test, predictions, average='micro'))
         #score, acc = self.model.evaluate(X_test_padded, y_test)        
         #print('mae: ', mae)
         #print('acc: ', acc)        
 
     def write_model_scores_df(self, C3_test_df, 
-                              results_csv_path = os.environ['HOME'] + 'models/CNN_C3_test_predictions1.csv'):
+                              results_csv_path):
         """
         Write the model scores as a CSV in the provided X_test and y_test. 
         
@@ -330,7 +365,8 @@ class DLTextClassifier():
        
     
 def run_dl_experiment(C3_train_df, 
-                      C3_test_df, 
+                      C3_test_df,
+                      results_csv_path = os.environ['HOME'] + 'models/test_predictions.csv', 
                       model = 'cnn'):
 
 
@@ -356,7 +392,7 @@ def run_dl_experiment(C3_train_df,
     
     print('\n Test accuracy: \n\n')
     dlclf.evaluate(X_test, y_test)
-    results_df = dlclf.write_model_scores_df(C3_test_df)
+    results_df = dlclf.write_model_scores_df(C3_test_df, results_csv_path)
        
         
 if __name__=="__main__":    
@@ -374,7 +410,7 @@ if __name__=="__main__":
     #X_test = C3_test_df['pp_comment_text'].astype(str)
     #y_test = C3_test_df['constructive_binary']
     #print('CNN experiment on the length-balanced test set: ')
-    run_dl_experiment(C3_train_df, C3_test_df, model = 'cnn')
+    run_dl_experiment(C3_train_df, C3_test_df, model = 'lstm')
     
     sys.exit(0)    
     # Run DL experiments on C3
