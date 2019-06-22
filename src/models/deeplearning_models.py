@@ -193,58 +193,7 @@ class DLTextClassifier():
         None        
         
         """
-        print('Building CNN model...')  
-        
-        '''
-        self.model = Sequential()
-        self.model.add(Embedding(self.vocab_size, 
-                                self.embedding_dimension, 
-                                weights=[self.embedding_matrix], 
-                                input_length=self.maxlen, 
-                                trainable=True))        
-        
-        #self.model.add(Dropout(0.5))
-        # we add a Convolution1D, which will learn filters
-        # word group filters of size filter_length:
-        
-        self.model.add(Conv1D(self.filters,
-                             self.kernel_size,
-                             padding='valid',
-                             activation='relu',
-                             strides=1,
-                             kernel_regularizer=regularizers.l2(0.01)))
-        self.model.add(MaxPooling1D())
-        self.model.add(Conv1D(self.filters,
-                             self.kernel_size,
-                             padding='valid',
-                             activation='relu',
-                             strides=1,
-                             kernel_regularizer=regularizers.l2(0.01)))
-        self.model.add(MaxPooling1D())
-        self.model.add(Conv1D(self.filters,
-                             self.kernel_size,
-                             padding='valid',
-                             activation='relu',
-                             strides=1,
-                             kernel_regularizer=regularizers.l2(0.01)))
-
-        
-        # we use max pooling:
-        self.model.add(GlobalMaxPooling1D())
-
-        # We add a vanilla hidden layer:
-        self.model.add(Dense(self.hidden_dims))
-        self.model.add(Dropout(0.2))
-        self.model.add(Activation('relu'))
-
-        # We project onto a single unit output layer, and squash it with a sigmoid:
-        self.model.add(Dense(1))
-        self.model.add(Activation('sigmoid'))
-
-        self.model.compile(loss='binary_crossentropy',
-                           optimizer='adam',
-                          metrics=['accuracy'])        
-        '''        
+        print('Building CNN model...')          
         sequence_input = Input(shape=(self.maxlen,), dtype='int32')
         embedding_layer = Embedding(self.vocab_size, 
                                     self.embedding_dimension, 
@@ -261,17 +210,12 @@ class DLTextClassifier():
         x = Flatten()(x)
         x = Dropout(0.5)(x)
         x = Dense(128, activation='relu')(x)
-        preds = Dense(1, activation='softmax')(x)
-        #return sequence_input, preds
-        # Compile model.
+        preds = Dense(1, activation='sigmoid')(x)
 
         self.model = Model(sequence_input, preds)
         self.model.compile(loss='binary_crossentropy',
                            optimizer='adam',
                            metrics=['accuracy'])        
-        #self.model.compile(loss='categorical_crossentropy',
-        #              optimizer=RMSprop(lr=LEARNING_RATE),
-        #              metrics=['acc'])
         
         print(self.model.summary())
         
@@ -319,8 +263,8 @@ class DLTextClassifier():
         """
         X_test_padded = self.prepare_data(X_test, mode='test')        
         #predictions = self.model.predict_classes(X_test_padded)    
-        predictions = self.model.predict(X_test_padded)    
-        print(predictions[:100])
+        prediction_probs = self.model.predict(X_test_padded)    
+        predictions = (prediction_probs > 0.5).astype(np.int)  
         print('sklearn micro-F1-Score:', f1_score(y_test, predictions, average='micro'))
         #score, acc = self.model.evaluate(X_test_padded, y_test)        
         #print('mae: ', mae)
@@ -336,12 +280,13 @@ class DLTextClassifier():
         X_test -- (list) the X values (encoded and padded list documents)
         y_test -- (list) the y values (a list of labels)
         
-        """
-        
+        """        
         results_df = C3_test_df
         X_test_padded = self.prepare_data(results_df['pp_comment_text'].astype(str), mode='test')        
-        results_df['prediction'] = self.model.predict_classes(X_test_padded)    
-        results_df['prediction proba'] = self.model.predict(X_test_padded)
+        prediction_probs = self.model.predict(X_test_padded)            
+        results_df['prediction proba'] = prediction_probs
+        #results_df['prediction'] = self.model.predict_classes(X_test_padded)            
+        results_df['prediction'] = (prediction_probs > 0.5).astype(np.int)        
         results_df['comment_len'] = results_df['pp_comment_text'].apply(lambda x: len(str(x).split()))
         results_df.to_csv(results_csv_path, index = False)
         print('Predictions file written: ', results_csv_path)
