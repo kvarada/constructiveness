@@ -4,9 +4,7 @@ import csv
 import json
 import sys
 import random
-sys.path.append('../source/modeling/')
-sys.path.append('../')
-from config import Config
+sys.path.append(os.environ['HOME'] + 'src/models/')
 
 from constructiveness_predictor import ConstructivenessPredictor
 
@@ -36,6 +34,10 @@ def get_prediction():
         print("You selected bidirectional LSTM.")
         label = predictor.predict_bilstm(text)
         # do whatever needs to be done for lstm
+    elif selected_model == "cnn":
+        print("You selected Convolution Neural Network.")
+        label = predictor.predict_cnn(text)
+        # do whatever needs to be done for lstm        
     else:
         print("Did you forget to select the model? Please select the model first.")
         return jsonify(predicted_label="Please select a model first")
@@ -59,8 +61,8 @@ def get_feedback():
     print('correct_label: ', correct_label)
     print('comments: ', comments)
 
-    file_exists = os.path.isfile(Config.FEEDBACK_CSV_PATH)
-    with open(Config.FEEDBACK_CSV_PATH, 'a+', newline='') as csvfile:
+    file_exists = os.path.isfile(os.environ['FEEDBACK_CSV_PATH'])
+    with open(os.environ['FEEDBACK_CSV_PATH'], 'a+', newline='') as csvfile:
         writer = csv.writer(csvfile)
         if not file_exists:
             writer.writerow(['Comment_text', 'Label', 'Comments'])
@@ -81,5 +83,5 @@ def get_sample_comment():
 
 
 if __name__ == '__main__':
-    app.run(host=Config.HOST, port=Config.PORT)
+    app.run(host=os.environ['HOST'], port=int(os.environ['PORT']))
 
