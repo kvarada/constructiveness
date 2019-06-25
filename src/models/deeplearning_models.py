@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 
 import tensorflow
 from keras.preprocessing import sequence
-from keras.models import Sequential, Model
+from keras.models import Sequential, Model, load_model
 from keras.layers import Dense, Input, LSTM, Embedding, Dropout, Activation, GRU, Flatten
 from keras.layers import Conv1D,Bidirectional, GlobalMaxPool1D, GlobalMaxPooling1D, MaxPooling1D
 from keras.datasets import imdb
@@ -19,6 +19,7 @@ from keras import regularizers
 from keras.layers import Concatenate
 from keras import metrics
 from sklearn.metrics import f1_score
+import pickle
 
 import keras.backend as K
 
@@ -28,10 +29,13 @@ def mean_pred(y_true, y_pred):
 import pickle, string
 
 class DLTextClassifier():
-    def __init__(self, X_train, y_train,  
+    def __init__(self, X_train = None, 
+                 y_train = None,  
                  embedding_dimension = 300,
                  max_features = 50000, 
-                 maxlen = 100):
+                 maxlen = 100, 
+                 mode = 'test', 
+                 model_path = os.environ['HOME'] + '/models/CNN_C3_train.h5'):
         """
         Instantiate the DLTextClassifer.
         
@@ -60,10 +64,19 @@ class DLTextClassifier():
         #pickle_out = open('../../data/interim/glove_embeddings_dict.pkl',"wb")
         #pickle.dump(self.glove_embeddings_dict, pickle_out) 
         #pickle_out.close()
-        pickled_data = open('/home/vkolhatk/dev/constructiveness/data/interim/glove_embeddings_dict.pkl',"rb")
-        self.glove_embeddings_dict = pickle.load(pickled_data)
-        self.X_train_padded = self.prepare_data(X_train)
-        self.embedding_matrix = self.create_embedding_matrix()
+        if mode == 'test':
+            pickle_save = os.environ['HOME'] + 'models/word_indices.pkl'
+            f = open(pickle_save, 'rb')
+            self.tokenizer = pickle.load(f)                        
+            self.model = load_model(model_path)
+            self.model.compile(optimizer = 'adam', loss = 'binary_crossentropy', metrics = ['accuracy'])                
+            
+        if mode == "train": 
+            pickled_data = open('/home/vkolhatk/dev/constructiveness/data/interim/glove_embeddings_dict.pkl',"rb")
+            self.glove_embeddings_dict = pickle.load(pickled_data)            
+            self.X_train_padded = self.prepare_data(X_train)
+            self.embedding_matrix = self.create_embedding_matrix()
+
         
     def read_glove_embeddings(self):
         """
@@ -100,7 +113,10 @@ class DLTextClassifier():
         return embedding_matrix
     
     
-    def prepare_data(self, corpus, mode = 'train'):
+    def prepare_data(self, 
+                     corpus, 
+                     mode = 'train', 
+                     pickle_save = os.environ['HOME'] + 'models/word_indices.pkl'):
         """
         Given a corpus and the mode, prepare data for the deep learning model.
         Maps a sequence words to integers and returns a padded and 
@@ -119,7 +135,9 @@ class DLTextClassifier():
         if mode == 'train': 
             # fit the tokenizer on the documents
             self.tokenizer.fit_on_texts(corpus)
-
+            f = open(pickle_save, 'wb')
+            pickle.dump(self.tokenizer, f)
+            
         # Store word_index
         self.word_index = self.tokenizer.word_index
                 
@@ -224,7 +242,7 @@ class DLTextClassifier():
               X_train, y_train,
               batch_size =32, 
               epochs = 5,
-              save_path = os.environ['HOME'] + '/models/my_model.h5'):
+              save_path = os.environ['HOME'] + '/models/model.h5'):
         """
         Given the parameters train a deep learning model and save and return it.  
         
@@ -306,7 +324,7 @@ class DLTextClassifier():
         
         """
         padded_sequences = self.prepare_data(texts, mode = 'test')
-        self.model.predict(padded_sequences)    
+        return self.model.predict(padded_sequences)    
        
     
 def run_dl_experiment(C3_train_df, 
@@ -343,6 +361,9 @@ def run_dl_experiment(C3_train_df,
 if __name__=="__main__":    
 
     # Run DL experiments on length-balanced C3
+    #from keras.models import load_model
+    #model = load_model(os.environ['HOME'] + '/models/CNN_C3_train.h5')
+    
    
     #C3_train_df = pd.read_csv(os.environ['C3_MINUS_LB'])
     #C3_test_df = pd.read_csv(os.environ['C3_LB'])
