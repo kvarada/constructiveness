@@ -9,9 +9,9 @@ The data for this project is a subset of comments from the SFU Opinion and Comme
 
 - SFU Opinion and Comments Corpus
 - Constructive Comments Corpus 
--- on Kaggle
--- on Simon Fraser University's Repository
--- Citation: 
+    - on Kaggle
+    - on Simon Fraser University's Repository
+    - Citation: 
 
 
 For more information about this work, please see our papers. 
