@@ -13,7 +13,7 @@ For more information about this work, please see our papers.
 - Kolhatkar, V. and M. Taboada (2017) [Constructive language in news comments](http://aclweb.org/anthology/W17-3002). [Proceedings of the 1st Abusive Language Online Workshop](https://sites.google.com/site/abusivelanguageworkshop2017/), 55th Annual Meeting of the Association for Computational Linguistics. Vancouver. August 2017, pp. 11-17.
 
 
-Check out the [web interface](http://moderation.ngrok.io/) for this project.
+Check out the [web interface](http://moderation.research.sfu.ca/) for this project.
 
 
 Project Organization
