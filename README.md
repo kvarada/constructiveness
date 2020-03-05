@@ -7,8 +7,8 @@ News organizations enable online commenting with the goal of increasing user eng
 
 The data for this project is a subset of comments from the SFU Opinion and Comments Corpus. This subset, the Constructive Comments Corpus (C3) consists of 12,000 comments annotated by crowdworkers for constructiveness and its characteristics.
 
-- SFU Opinion and Comments Corpus
-- Constructive Comments Corpus 
+- [SFU Opinion and Comments Corpus](https://github.com/sfu-discourse-lab/SOCC)
+- Constructive Comments Corpus (C3)
     - on Kaggle
     - on Simon Fraser University's Repository
     - Citation: 
