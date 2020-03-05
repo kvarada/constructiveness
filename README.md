@@ -9,10 +9,9 @@ The data for this project is a subset of comments from the SFU Opinion and Comme
 
 - [SFU Opinion and Comments Corpus](https://github.com/sfu-discourse-lab/SOCC)
 - Constructive Comments Corpus (C3)
-    - on Kaggle
-    - on Simon Fraser University's Repository
+    - On Kaggle
+    - On Simon Fraser University's Repository
     - Citation: 
-
 
 For more information about this work, please see our papers. 
 
