@@ -1,5 +1,4 @@
 ### Constructiveness in online news comments
-==============================
 
 Identifying constructive language
 
