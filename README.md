@@ -9,7 +9,7 @@ The data for this project is a subset of comments from the SFU Opinion and Comme
 - [SFU Opinion and Comments Corpus](https://github.com/sfu-discourse-lab/SOCC)
 - Constructive Comments Corpus (C3)
     - On Kaggle: [https://www.kaggle.com/mtaboada/c3-constructive-comments-corpus](https://www.kaggle.com/mtaboada/c3-constructive-comments-corpus)
-    - On Simon Fraser University's Repository: [https://researchdata.sfu.ca/islandora/object/sfu%3A2977](https://researchdata.sfu.ca/islandora/object/sfu%3A2977)
+    - On Simon Fraser University's Repository: [https://dx.doi.org/10.25314/ea49062a-5cf6-4403-9918-539e15fd7b52](https://dx.doi.org/10.25314/ea49062a-5cf6-4403-9918-539e15fd7b52)
     - Citation: Kolhatkar, V., N. Thain, J. Sorensen, L. Dixon and M. Taboada (2020) C3: The Constructive Comments Corpus. Jigsaw and Simon Fraser University. (Dataset). DOI: 10.25314/ea49062a-5cf6-4403-9918-539e15fd7b52
 
 For more information about this work, please see our papers. 
