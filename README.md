@@ -9,13 +9,15 @@ The data for this project is a subset of comments from the SFU Opinion and Comme
 
 - [SFU Opinion and Comments Corpus](https://github.com/sfu-discourse-lab/SOCC)
 - Constructive Comments Corpus (C3)
-    - On Kaggle
-    - On Simon Fraser University's Repository
-    - Citation: 
+    - On Kaggle: [https://www.kaggle.com/mtaboada/c3-constructive-comments-corpus](https://www.kaggle.com/mtaboada/c3-constructive-comments-corpus)
+    - On Simon Fraser University's Repository: [https://researchdata.sfu.ca/islandora/object/sfu%3A2977](https://researchdata.sfu.ca/islandora/object/sfu%3A2977)
+    - Citation: Kolhatkar, V., N. Thain, J. Sorensen, L. Dixon and M. Taboada (2020) C3: The Constructive Comments Corpus. Jigsaw and Simon Fraser University. (Dataset). DOI: 10.25314/ea49062a-5cf6-4403-9918-539e15fd7b52
 
 For more information about this work, please see our papers. 
 
 - Kolhatkar, V., N. Thain, J. Sorensen, L. Dixon and M. Taboada (to appear) Classifying constructive comments. Journal article under review.  
+
+- Kolhatkar, V.,H. Wu, L. Cavasso, E. Francis, K. Shukla and M. Taboada (to appear) The SFU Opinion and Comments Corpus: A corpus for the analysis of online news comments. Corpus Pragmatics.
 
 - Kolhatkar. V. and M. Taboada (2017) [Using New York Times Picks to identify constructive comments](https://www.aclweb.org/anthology/W17-4218/). [Proceedings of the Workshop Natural Language Processing Meets Journalism](http://nlpj2017.fbk.eu/), Conference on Empirical Methods in Natural Language Processing. Copenhagen. September 2017.
 
